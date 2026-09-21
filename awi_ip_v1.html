@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阿瑋｜陳致瑋｜高雄房東租賃管理・代租代管</title>
+  <meta name="description" content="阿瑋｜陳致瑋，專注高雄多戶型房東租賃管理，協助分租套房、企業宿舍與10戶以上出租物件進行代租代管、招租、租約、維修與出租率管理。">
+  <meta name="keywords" content="高雄代租代管,高雄房東代管,高雄套房管理,分租套房管理,企業宿舍,租賃管理,房東找阿瑋">
+  <meta name="author" content="陳致瑋">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root{
+      --bg:#071316;--panel:#0d1d21;--panel2:#10272b;--text:#eaf7f6;
+      --muted:#9db5b7;--accent:#25d0bd;--accent2:#65e8d8;--line:rgba(101,232,216,.16);
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 10%,rgba(37,208,189,.10),transparent 30%),var(--bg);
+      color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.75}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),92%);margin:auto}
+    nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,19,22,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav .wrap{height:68px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.08em}.logo span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}
+    .navlinks a:hover{color:var(--accent2)}
+    .hero{min-height:92vh;display:grid;place-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(37,208,189,.12);border-radius:50%;right:-180px;top:100px;box-shadow:0 0 100px rgba(37,208,189,.08)}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;font-size:.9rem}
+    h1{font-size:clamp(3rem,8vw,6.4rem);line-height:1.02;margin:18px 0}
+    h1 small{display:block;font-size:.28em;letter-spacing:.12em;color:var(--muted);margin-top:18px}
+    h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.2;margin:0 0 18px}
+    h3{margin:0 0 8px}
+    .hero p{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);max-width:720px}
+    .hero strong{color:var(--text)}
+    .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .btn{display:inline-flex;padding:13px 22px;border-radius:999px;border:1px solid var(--line);font-weight:700;transition:.25s}
+    .btn.primary{background:var(--accent);color:#04201d;border-color:var(--accent)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(37,208,189,.15)}
+    section{padding:92px 0;border-top:1px solid var(--line)}
+    .lead{color:var(--muted);max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .card{background:linear-gradient(145deg,rgba(16,39,43,.9),rgba(10,27,30,.9));border:1px solid var(--line);border-radius:22px;padding:26px}
+    .card p{color:var(--muted);margin-bottom:0}
+    .number{color:var(--accent);font-weight:800;font-size:.9rem}
+    .service{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch;margin-top:36px}
+    .servicebox{padding:34px;border-radius:24px;background:var(--panel);border:1px solid var(--line)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+    .step{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:18px}
+    .case{border-left:3px solid var(--accent);padding-left:24px;margin-top:30px}
+    .case .result{font-size:2rem;font-weight:800;color:var(--accent)}
+    .cta{background:linear-gradient(135deg,rgba(37,208,189,.14),rgba(16,39,43,.8));border:1px solid var(--line);border-radius:30px;padding:48px}
+    footer{padding:42px 0;color:var(--muted);font-size:.9rem}
+    .reveal{opacity:0;transform:translateY(24px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:820px){
+      .navlinks{display:none}.grid,.service{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
+      .hero{min-height:auto;padding-top:130px}.cta{padding:30px}
+    }
+    @media(max-width:520px){.steps{grid-template-columns:1fr}section{padding:70px 0}}
+  </style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#top">阿瑋<span>｜</span>陳致瑋</a>
+  <div class="navlinks">
+    <a href="#problems">房東問題</a><a href="#services">租賃管理</a><a href="#cases">案例</a><a href="#contact">聯絡阿瑋</a>
+  </div>
+</div></nav>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap reveal">
+    <div class="eyebrow">房東找阿瑋 · KAohsiung Rental Management</div>
+    <h1>房東找阿瑋<small>高雄多戶型房東租賃管理</small></h1>
+    <p>分租套房・企業宿舍・代租代管・租賃營運</p>
+    <p>房子在高雄，人卻在外地？手上有 10 間、20 間甚至更多出租房屋，卻沒有時間每天處理房客、租約、維修與招租？</p>
+    <p><strong>把出租這件事交給專業管理，讓你不用每天追著房子跑。</strong></p>
+    <div class="actions">
+      <a class="btn primary" href="#contact">免費房屋出租健檢</a>
+      <a class="btn" href="#cases">看實戰案例</a>
+    </div>
+  </div>
+</section>
+
+<section id="problems"><div class="wrap reveal">
+  <div class="eyebrow">01 · 房東常見問題</div>
+  <h2>你是不是這樣的房東？</h2>
+  <p class="lead">當房屋數量增加，問題往往不只是「租不租得出去」，而是整套租賃營運需要有人持續管理。</p>
+  <div class="grid">
+    <article class="card"><div class="number">01</div><h3>房子很多，自己管理很累</h3><p>10 間、20 間以上的房屋，招租、收租、維修、續約很快就會變成每天的工作。</p></article>
+    <article class="card"><div class="number">02</div><h3>人在外縣市</h3><p>房客聯絡、設備故障、空房、退租，都需要有人在現場快速處理。</p></article>
+    <article class="card"><div class="number">03</div><h3>空房不知道問題在哪</h3><p>租金、設備、照片、格局、招租方式，都可能影響出租速度。</p></article>
+    <article class="card"><div class="number">04</div><h3>很多意見，卻難以決定</h3><p>要不要調租、裝修、換設備、接受房客？需要資料、方案與執行，而不只是另一個建議。</p></article>
+    <article class="card"><div class="number">05</div><h3>維修與房務一直打斷生活</h3><p>小問題累積成大管理成本，需要有人追蹤、派工與確認完成。</p></article>
+    <article class="card"><div class="number">06</div><h3>想提高整體出租率</h3><p>不只看單一房間，而是從整體物件與營運流程找出改善機會。</p></article>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap reveal">
+  <div class="eyebrow">02 · 租賃營運</div>
+  <h2>你需要的，不只是出租，而是租賃營運。</h2>
+  <p class="lead">從物件評估到日常管理，把原本需要房東親自追蹤的事情，變成有流程、有紀錄、有人執行的管理工作。</p>
+  <div class="steps">
+    <div class="step"><b>物件評估</b><br><span class="lead">租金、條件、改善方向</span></div>
+    <div class="step"><b>招租</b><br><span class="lead">曝光、文案、看房、簽約</span></div>
+    <div class="step"><b>日常管理</b><br><span class="lead">收租、房客、房務、維修</span></div>
+    <div class="step"><b>持續優化</b><br><span class="lead">續約、空房、出租率</span></div>
+  </div>
+  <div class="service">
+    <div class="servicebox"><h3>代租代管</h3><p class="lead">以房東的出租需求為核心，協助處理招租、房客、租約及日常管理。</p></div>
+    <div class="servicebox"><h3>多戶型租賃營運</h3><p class="lead">適合分租套房、企業宿舍與多房間物件，從整體出租率與管理效率思考，而非只處理單一房間。</p></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="wrap reveal">
+  <div class="eyebrow">03 · 阿瑋的實戰</div>
+  <h2>不是只幫你刊一間房，而是理解整體營運。</h2>
+  <div class="grid">
+    <article class="card"><h3>多戶型管理</h3><p>熟悉分租套房、多房型出租與多棟物件的日常管理。</p></article>
+    <article class="card"><h3>企業宿舍</h3><p>具企業宿舍實際管理經驗，從入住、房務到維修都有第一線經驗。</p></article>
+    <article class="card"><h3>工務與房務</h3><p>不只招租，也重視設備、維修、清潔與入住準備對出租率的影響。</p></article>
+  </div>
+</div></section>
+
+<section id="cases"><div class="wrap reveal">
+  <div class="eyebrow">04 · 實戰案例</div>
+  <h2>用實際管理結果，說明我們做了什麼。</h2>
+  <div class="case">
+    <h3>楠梓車站企業宿舍</h3>
+    <p>14 間房，管理前僅出租 1 間；經重新檢視物件、招租與管理流程後，達成滿租。</p>
+    <div class="result">1 間 → 14 間</div>
+    <p class="lead">案例內容後續可補上完整時間軸、改善措施與實際照片。</p>
+  </div>
+  <div class="case">
+    <h3>四維行政中心分租套房</h3>
+    <p>20 間套房＋2 間店面，管理前出租 6 間；管理後出租 17 間，並完成店面出租。</p>
+    <div class="result">6 間 → 17 間</div>
+    <p class="lead">案例內容後續可補上出租率、租金調整與物件改善細節。</p>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap reveal">
+  <div class="eyebrow">05 · 房東常見問題</div>
+  <h2>先了解，再決定。</h2>
+  <div class="grid">
+    <article class="card"><h3>代租代管和包租有什麼不同？</h3><p>兩者在契約關係、收益與風險分配上不同。阿瑋目前主要協助房東進行代租代管與租賃營運。</p></article>
+    <article class="card"><h3>10 間以上套房適合自己管理嗎？</h3><p>可以，但應評估時間成本、維修、收租、招租與空房管理是否已超過自己能負擔的程度。</p></article>
+    <article class="card"><h3>外縣市房東如何管理高雄房屋？</h3><p>重點是建立現場處理、房客聯繫、維修派工、租約與出租率的管理流程。</p></article>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+  <div class="cta">
+    <div class="eyebrow">06 · 房東出租健檢</div>
+    <h2>你的房子，不只是出租，而是需要有人營運。</h2>
+    <p class="lead">如果你在高雄有 10 間以上出租房屋，或是人在外縣市、無法長期處理現場管理，可以先從「房屋出租健檢」開始。</p>
+    <div class="actions">
+      <a class="btn primary" href="https://lin.ee/" target="_blank" rel="noopener">LINE 聯絡阿瑋</a>
+      <a class="btn" href="mailto:contact@example.com">Email 聯絡</a>
+    </div>
+    <p class="lead" style="margin-top:18px">※ LINE 連結與正式聯絡資訊上線前再替換。</p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="year"></span> 阿瑋｜陳致瑋 · 高雄房東租賃管理</div></footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
