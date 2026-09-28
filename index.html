@@ -88,11 +88,15 @@
   font-size:1rem;
   font-weight:700;
 }
+
+.case .stats-grid{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:18px}
+.case .stat{min-width:0;padding:24px 12px}
+.case .stat strong{font-size:clamp(1.35rem,3vw,2rem);overflow-wrap:anywhere}
     @media(max-width:820px){
       .navlinks{display:none}.grid,.service{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}
       .hero{min-height:auto;padding-top:130px}.cta{padding:30px}
     }
-    @media(max-width:520px){.steps{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr}section{padding:70px 0}}
+    @media(max-width:520px){.steps{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr}.case .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:70px 0}}
   </style>
 </head>
 <body>
@@ -236,6 +240,13 @@
   </div>
   <div class="case">
     <h3>四維行政中心｜分租套房</h3>
+
+<div class="stats-grid">
+  <div class="stat"><strong>40年</strong><span>房屋使用年限</span></div>
+  <div class="stat"><strong>約200萬</strong><span>整理投入</span></div>
+  <div class="stat"><strong>6 → 17</strong><span>出租間數</span></div>
+  <div class="stat"><strong>+30%↑</strong><span>整體租金水準</span></div>
+</div>
 
 <p><strong>20間套房＋2間店面｜6間 → 17間</strong></p>
 
