@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>天山路電梯套房｜前鎮區房源｜房東找阿瑋</title>
+  <meta name="description" content="天山路電梯套房，位於高雄市前鎮區，套房約5～6坪，月租約6,500～8,000元，提供房型與公共設施資訊。">
+  <link rel="stylesheet" href="/assets/css/property-pages.css">
+</head>
+<body>
+  <nav class="p-nav"><div class="p-wrap p-nav-inner">
+    <a class="p-logo" href="/">阿瑋<span>｜</span>陳致瑋</a>
+    <div class="p-links"><a href="/">首頁</a><a href="/properties/">房源總覽</a><a href="#room-types">房型</a><a href="#availability">出租狀態</a><a href="https://lin.ee/741U2pz" target="_blank" rel="noopener">LINE 聯絡</a></div>
+  </div></nav>
+  <main id="property-page">
+    <header class="p-hero"><div class="p-wrap">
+      <div class="p-eyebrow">高雄市前鎮區 · 套房物件</div>
+      <h1>天山路電梯套房</h1>
+      <p class="p-lead">公開位置：天山路23號附近｜房間分布於2F～8F。房型坪數與設備依實際房間確認。</p>
+      <div class="p-chips"><span class="p-chip">套房約5～6坪</span><span class="p-chip">月租約6,500～8,000元</span><span class="p-chip">租金依房型而定</span></div>
+      <a class="p-btn p-btn-primary" href="#availability">查看目前房源</a>
+    </div></header>
+
+    <section class="p-section" id="introduction"><div class="p-wrap">
+      <div class="p-eyebrow">PROPERTY INTRODUCTION</div>
+      <h2>物件介紹</h2>
+      <p class="p-lead">天山路電梯套房位於高雄市前鎮區，公開位置為天山路23號附近。既有房源文案曾列出房內冷氣、電視、冰箱、床組、衣櫃及書桌椅等設備；因各房型目前配置與屋況尚待核對，實際提供項目以看房確認為準。</p>
+      <div class="p-facts">
+        <div class="p-fact"><b>水費</b><p>每月免費5度，超過部分每度20元，退租時結算。</p></div>
+        <div class="p-fact"><b>電費</b><p>依各房間電表實際計算。</p></div>
+      </div>
+    </div></section>
+
+    <section class="p-section" id="facilities"><div class="p-wrap">
+      <div class="p-eyebrow">SHARED FACILITIES</div>
+      <h2>公共設施</h2>
+      <p class="p-lead">以下照片可辨識一樓電梯與出入口。其他設施依既有文案列載，現況待確認。</p>
+      <div class="p-grid p-grid-2" id="facility-grid"></div>
+      <div class="p-notice" style="margin-top:18px"><strong>既有文案提及的公共設備</strong><p class="p-muted">飲水機、投幣洗衣機、脫水機及頂樓曬衣空間；目前設備是否仍在使用，待確認。</p></div>
+    </div></section>
+
+    <section class="p-section" id="room-types"><div class="p-wrap">
+      <div class="p-eyebrow">ROOM TYPE GUIDE</div>
+      <h2>房型介紹</h2>
+      <p class="p-lead">01、02、03、05、06、07、08、09房型依樓層有相同編號配置。卡片照片為代表參考照，不代表目前出租狀態。</p>
+      <div class="p-grid p-grid-4" id="room-type-grid"></div>
+      <p class="p-note" id="photo-note"></p>
+    </div></section>
+
+    <section class="p-section" id="availability"><div class="p-wrap">
+      <div class="p-eyebrow">CURRENT AVAILABILITY</div>
+      <h2>目前可出租</h2>
+      <div class="p-notice"><strong>目前空房資料正在確認中</strong><p class="p-muted">如需確認看房與可租房型，請透過 LINE 聯絡。</p></div>
+      <div class="p-chips"><span class="p-chip">水費：每月免費5度，超過每度20元，退租結算</span><span class="p-chip">電費：依房間電表實際計算</span></div>
+      <a class="p-btn p-btn-primary" href="https://lin.ee/741U2pz" target="_blank" rel="noopener">LINE 聯絡／預約看房</a>
+    </div></section>
+  </main>
+  <footer class="p-footer"><div class="p-wrap"><a href="/properties/">← 返回房源總覽</a>　·　© 2026 阿瑋｜陳致瑋</div></footer>
+  <script type="module">
+    const response = await fetch('/properties/data/tianshan.json');
+    if (!response.ok) throw new Error('無法載入天山路房源資料');
+    const property = await response.json();
+    const facilityGrid = document.getElementById('facility-grid');
+    facilityGrid.innerHTML = property.sharedFacilities.filter(item => item.image).map(item => `
+      <article class="p-card"><img src="${item.image}" alt="${item.alt}" loading="lazy"><div class="p-card-body"><h3>${item.name}</h3><p>${item.status}</p></div></article>`).join('');
+    const typeGrid = document.getElementById('room-type-grid');
+    typeGrid.innerHTML = property.roomTypes.map(roomType => `
+      <article class="p-card">
+        <img src="${roomType.image}" alt="${roomType.alt}" loading="lazy">
+        <div class="p-card-body">
+          <div class="p-type-no">${roomType.type} 房型</div>
+          <p><b>坪數：</b>${roomType.area || '待確認'}</p>
+          <p><b>設備：</b>${roomType.equipment}</p>
+          <p><b>適用樓層：</b>${roomType.floors.join('、')}</p>
+        </div>
+      </article>`).join('');
+    document.getElementById('photo-note').textContent = property.photosNote;
+  </script>
+</body>
+</html>
