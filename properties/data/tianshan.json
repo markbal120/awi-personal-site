@@ -14,20 +14,22 @@
   "description": "依既有房源文案，房間曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅等設備；各房型目前配置與現況仍待確認。",
   "sharedFacilities": [
     {
-      "name": "電梯與一樓出入口",
-      "status": "照片可確認",
+      "name": "電梯、一樓出入口、飲水機",
+      "status": "",
       "image": "/assets/properties/tianshan/common-entry.jpg",
-      "alt": "天山路物件一樓電梯與出入口"
+      "alt": "天山路物件一樓電梯、出入口與飲水機"
     },
     {
       "name": "電梯口",
-      "status": "照片可確認",
+      "status": "",
       "image": "/assets/properties/tianshan/elevator.jpg",
       "alt": "天山路物件一樓電梯口"
     },
     {
-      "name": "飲水機、投幣洗衣機、脫水機及頂樓曬衣空間",
-      "status": "既有文案提及，現況待確認"
+      "name": "頂樓公共設施",
+      "status": "投幣洗衣機、乾衣機、脫水機及頂樓曬衣空間",
+      "image": "/assets/properties/tianshan/rooftop-common.jpg",
+      "alt": "天山路物件頂樓公共陽台與曬衣空間"
     }
   ],
   "availability": {
