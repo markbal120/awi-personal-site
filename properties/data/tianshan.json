@@ -1,51 +1,316 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "2.0",
   "slug": "tianshan",
   "name": "天山路電梯套房",
   "area": "高雄市前鎮區",
   "publicLocation": "天山路23號附近",
   "buildingFloors": "2F～8F",
+  "floorsWithRooms": [
+    "2F",
+    "3F",
+    "5F",
+    "6F",
+    "7F",
+    "8F"
+  ],
   "suiteArea": "約5～6坪",
   "rent": "約6,500～8,000元／月",
+  "rentNote": "租金依房型與實際房間確認，不代表每間房的固定租金。",
+  "intro": [
+    "房間、廁所皆有對外窗採光，並配備換氣扇通風，部分房型有獨立陽台。",
+    "全套傢俱：床墊、書桌椅、衣櫥。",
+    "全套家電：日立變頻分離式冷氣、43吋液晶電視（光纖高畫質第四台）、冰箱、儲熱式電熱水爐、獨立網路Wifi。"
+  ],
   "utilities": {
     "water": "每月免費5度，超過部分每度20元，退租時結算。",
     "electricity": "依各房間電表實際計算。"
   },
-  "description": "依既有房源文案，房間曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅等設備；各房型目前配置與現況仍待確認。",
+  "sharedFacilitiesText": "大門電磁感應門鎖、24小時監視系統，各層有滅火器、消防送水廂、緊急照明、磚牆隔間防火隔音佳、1F以上不設鐵窗",
   "sharedFacilities": [
     {
-      "name": "電梯、一樓出入口、飲水機",
-      "status": "",
-      "image": "/assets/properties/tianshan/common-entry.jpg",
-      "alt": "天山路物件一樓電梯、出入口與飲水機"
+      "name": "一樓電梯口",
+      "description": "一樓電梯口公共空間。",
+      "image": "/assets/properties/tianshan/common/elevator-lobby.jpg",
+      "alt": "天山路一樓電梯口"
     },
     {
-      "name": "電梯口",
-      "status": "",
-      "image": "/assets/properties/tianshan/elevator.jpg",
-      "alt": "天山路物件一樓電梯口"
+      "name": "電梯、出入口與飲水機",
+      "description": "一樓電梯、出入口及飲水機。",
+      "image": "/assets/properties/tianshan/common/entrance-dispenser.jpg",
+      "alt": "天山路電梯、一樓出入口與飲水機"
     },
     {
       "name": "頂樓公共設施",
-      "status": "投幣洗衣機、乾衣機、脫水機及頂樓曬衣空間",
-      "image": "/assets/properties/tianshan/rooftop-common.jpg",
-      "alt": "天山路物件頂樓公共陽台與曬衣空間"
+      "description": "投幣洗衣機、乾衣機、脫水機及頂樓曬衣空間。",
+      "image": "/assets/properties/tianshan/common/rooftop-common.jpg",
+      "alt": "天山路頂樓公共空間"
     }
   ],
   "availability": {
-    "publicMessage": "目前空房資料正在確認中",
-    "units": []
+    "availableRooms": [
+      "206",
+      "305",
+      "506",
+      "707",
+      "803",
+      "809"
+    ],
+    "confirmedRentedRooms": [
+      "203",
+      "207",
+      "705"
+    ],
+    "note": "其他房號的可租狀態及看房時間，請透過LINE確認。"
   },
   "roomTypes": [
-    {"type": "01", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-01.jpg", "alt": "01房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "02", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-02.jpg", "alt": "02房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "03", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-03.jpg", "alt": "03房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "05", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-05.jpg", "alt": "05房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "06", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-06.jpg", "alt": "06房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "07", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-07.jpg", "alt": "07房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "08", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-08.jpg", "alt": "08房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []},
-    {"type": "09", "floors": ["2F", "3F", "5F", "6F", "7F", "8F"], "image": "/assets/properties/tianshan/type-09.jpg", "alt": "09房型室內參考照", "area": null, "equipment": "依既有文案曾列有冷氣、電視、冰箱、床組、衣櫃及書桌椅；本房型實際配置待確認。", "rooms": []}
+    {
+      "type": "01",
+      "representativeRoom": "201",
+      "roomNumbers": [
+        "201",
+        "301",
+        "501",
+        "601",
+        "701",
+        "801"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/01/01-01.jpg",
+          "alt": "天山路01房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/01/01-02.jpg",
+          "alt": "天山路01房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/01/01-03.jpg",
+          "alt": "天山路01房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/01/01-04.jpg",
+          "alt": "天山路01房型代表照片 4"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/01/01-05.jpg",
+          "alt": "天山路01房型代表照片 5"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/01/01-06.jpg",
+          "alt": "天山路01房型代表照片 6"
+        }
+      ]
+    },
+    {
+      "type": "02",
+      "representativeRoom": "202",
+      "roomNumbers": [
+        "202",
+        "302",
+        "502",
+        "602",
+        "702",
+        "802"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/02/02-01.jpg",
+          "alt": "天山路02房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/02/02-02.jpg",
+          "alt": "天山路02房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/02/02-03.jpg",
+          "alt": "天山路02房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/02/02-04.jpg",
+          "alt": "天山路02房型代表照片 4"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/02/02-05.jpg",
+          "alt": "天山路02房型代表照片 5"
+        }
+      ]
+    },
+    {
+      "type": "03",
+      "representativeRoom": "203",
+      "roomNumbers": [
+        "203",
+        "303",
+        "503",
+        "603",
+        "703",
+        "803"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/03/03-01.jpg",
+          "alt": "天山路03房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/03/03-02.jpg",
+          "alt": "天山路03房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/03/03-03.jpg",
+          "alt": "天山路03房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/03/03-04.jpg",
+          "alt": "天山路03房型代表照片 4"
+        }
+      ]
+    },
+    {
+      "type": "05",
+      "representativeRoom": "205",
+      "roomNumbers": [
+        "205",
+        "305",
+        "505",
+        "605",
+        "705",
+        "805"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/05/05-01.jpg",
+          "alt": "天山路05房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/05/05-02.jpg",
+          "alt": "天山路05房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/05/05-03.jpg",
+          "alt": "天山路05房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/05/05-04.jpg",
+          "alt": "天山路05房型代表照片 4"
+        }
+      ]
+    },
+    {
+      "type": "06",
+      "representativeRoom": "506",
+      "roomNumbers": [
+        "206",
+        "306",
+        "506",
+        "606",
+        "706",
+        "806"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/06/06-01.jpg",
+          "alt": "天山路06房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/06/06-02.jpg",
+          "alt": "天山路06房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/06/06-03.jpg",
+          "alt": "天山路06房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/06/06-04.jpg",
+          "alt": "天山路06房型代表照片 4"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/06/06-05.jpg",
+          "alt": "天山路06房型代表照片 5"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/06/06-06.jpg",
+          "alt": "天山路06房型代表照片 6"
+        }
+      ]
+    },
+    {
+      "type": "07",
+      "representativeRoom": "707",
+      "roomNumbers": [
+        "207",
+        "307",
+        "507",
+        "607",
+        "707",
+        "807"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/07/07-01.jpg",
+          "alt": "天山路07房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/07/07-02.jpg",
+          "alt": "天山路07房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/07/07-03.jpg",
+          "alt": "天山路07房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/07/07-04.jpg",
+          "alt": "天山路07房型代表照片 4"
+        }
+      ]
+    },
+    {
+      "type": "08",
+      "representativeRoom": "208",
+      "roomNumbers": [
+        "208",
+        "308",
+        "508",
+        "608",
+        "708",
+        "808"
+      ],
+      "photos": []
+    },
+    {
+      "type": "09",
+      "representativeRoom": "709",
+      "roomNumbers": [
+        "209",
+        "309",
+        "509",
+        "609",
+        "709",
+        "809"
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/09/09-01.jpg",
+          "alt": "天山路09房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/09/09-02.jpg",
+          "alt": "天山路09房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/09/09-03.jpg",
+          "alt": "天山路09房型代表照片 3"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/09/09-04.jpg",
+          "alt": "天山路09房型代表照片 4"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/09/09-05.jpg",
+          "alt": "天山路09房型代表照片 5"
+        }
+      ]
+    }
   ],
-  "photosNote": "房型照片為代表參考照，拍攝時間較早，實際屋況、設備與裝潢可能不同；看房前請先確認。",
+  "photosNote": "房型代表照片，實際房間配置及屋況依現場為準。",
   "lineUrl": "https://lin.ee/741U2pz"
 }

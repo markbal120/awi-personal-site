@@ -1,0 +1,32 @@
+:root{--tianshan-soft:rgba(101,232,216,.1)}
+.tianshan-type-card{display:block;transition:transform .2s ease,border-color .2s ease}
+.tianshan-type-card:hover{transform:translateY(-3px);border-color:rgba(101,232,216,.55)}
+.tianshan-type-card .p-card-body{height:100%}
+.tianshan-type-card .p-card-body>p{line-height:1.55}
+.tianshan-representative-note{font-size:.82rem!important;line-height:1.55;margin-top:14px!important}
+.tianshan-card-link{display:inline-block;margin-top:16px;color:var(--property-accent2);font-weight:750}
+.tianshan-photo-placeholder{aspect-ratio:4/3;display:grid;place-items:center;padding:18px;text-align:center;background:radial-gradient(circle at 50% 20%,rgba(37,208,189,.12),transparent 60%),var(--property-panel);color:var(--property-muted);font-weight:700}
+.tianshan-type-hero{padding:68px 0 56px;border-bottom:1px solid var(--property-line)}
+.tianshan-type-hero h1{font-size:clamp(2.25rem,6vw,4.3rem);line-height:1.12;margin:12px 0}
+.tianshan-back-link{display:inline-block;margin-bottom:22px;color:var(--property-accent2)}
+.tianshan-type-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.tianshan-type-fact{padding:18px;border:1px solid var(--property-line);border-radius:18px;background:var(--property-panel)}
+.tianshan-type-fact b{display:block;color:var(--property-accent);margin-bottom:4px}
+.tianshan-type-fact p{margin:0;color:var(--property-muted)}
+.tianshan-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.tianshan-gallery-item{min-width:0;overflow:hidden;border:1px solid var(--property-line);border-radius:18px;background:var(--property-panel);color:var(--property-muted)}
+.tianshan-gallery-item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--property-panel2)}
+.tianshan-gallery-item span{display:block;padding:8px 12px;font-size:.86rem}
+.tianshan-type-note{color:var(--property-muted);font-size:.92rem;margin-top:14px}
+.tianshan-room-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0;margin:24px 0 0;list-style:none}
+.tianshan-room-list li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border:1px solid var(--property-line);border-radius:16px;background:var(--property-panel)}
+.tianshan-room-list strong{font-size:1.1rem;color:var(--property-text)}
+.tianshan-status{font-size:.82rem;color:var(--property-muted)}
+.tianshan-status-available{color:var(--property-accent2);font-weight:750}
+.tianshan-status-unknown{font-size:.76rem}
+.tianshan-type-cta{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px;border:1px solid var(--property-line);border-radius:24px;background:linear-gradient(135deg,rgba(37,208,189,.13),rgba(16,39,43,.82))}
+.tianshan-type-cta h2{margin-bottom:8px}
+.tianshan-type-cta p{margin:0;color:var(--property-muted)}
+.tianshan-type-cta .p-btn{flex-shrink:0}
+@media(max-width:900px){.tianshan-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.tianshan-room-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.tianshan-type-facts,.tianshan-gallery,.tianshan-room-list{grid-template-columns:1fr}.tianshan-type-hero{padding:48px 0 38px}.tianshan-type-cta{align-items:flex-start;flex-direction:column;padding:22px}}

@@ -6,6 +6,7 @@
   <title>天山路電梯套房｜前鎮區房源｜房東找阿瑋</title>
   <meta name="description" content="天山路電梯套房，位於高雄市前鎮區，套房約5～6坪，月租約6,500～8,000元，提供房型與公共設施資訊。">
   <link rel="stylesheet" href="/assets/css/property-pages.css">
+  <link rel="stylesheet" href="/assets/css/tianshan-pages.css">
 </head>
 <body>
   <nav class="p-nav"><div class="p-wrap p-nav-inner">
@@ -43,7 +44,7 @@
     <section class="p-section" id="room-types"><div class="p-wrap">
       <div class="p-eyebrow">ROOM TYPE GUIDE</div>
       <h2>房型介紹</h2>
-      <p class="p-lead">01、02、03、05、06、07、08、09房型依樓層有相同編號配置。卡片照片為代表參考照，不代表目前出租狀態。</p>
+      <p class="p-lead">選擇房型可查看代表照片、房號與介紹；沒有實房照片的房型也可先透過 LINE 詢問。</p>
       <div class="p-grid p-grid-4" id="room-type-grid"></div>
       <p class="p-note" id="photo-note"></p>
     </div></section>
@@ -51,31 +52,12 @@
     <section class="p-section" id="availability"><div class="p-wrap">
       <div class="p-eyebrow">CURRENT AVAILABILITY</div>
       <h2>目前可出租</h2>
-      <div class="p-notice"><strong>目前空房資料正在確認中</strong><p class="p-muted">如需確認看房與可租房型，請透過 LINE 聯絡。</p></div>
+      <div class="p-notice"><strong>目前可出租房間</strong><p class="p-muted">目前已確認以下房號可洽詢看房；其他房號狀態請透過 LINE 確認。</p><div class="p-chips" id="availability-rooms" aria-live="polite"></div></div>
       <div class="p-chips"><span class="p-chip">水費：每月免費5度，超過每度20元，退租結算</span><span class="p-chip">電費：依房間電表實際計算</span></div>
       <a class="p-btn p-btn-primary" href="https://lin.ee/741U2pz" target="_blank" rel="noopener">LINE 聯絡／預約看房</a>
     </div></section>
   </main>
   <footer class="p-footer"><div class="p-wrap"><a href="/properties/">← 返回房源總覽</a>　·　© 2026 阿瑋｜陳致瑋</div></footer>
-  <script type="module">
-    const response = await fetch('/properties/data/tianshan.json');
-    if (!response.ok) throw new Error('無法載入天山路房源資料');
-    const property = await response.json();
-    const facilityGrid = document.getElementById('facility-grid');
-    facilityGrid.innerHTML = property.sharedFacilities.filter(item => item.image).map(item => `
-      <article class="p-card"><img src="${item.image}" alt="${item.alt}" loading="lazy"><div class="p-card-body"><h3>${item.name}</h3><p>${item.status}</p></div></article>`).join('');
-    const typeGrid = document.getElementById('room-type-grid');
-    typeGrid.innerHTML = property.roomTypes.map(roomType => `
-      <article class="p-card">
-        <img src="${roomType.image}" alt="${roomType.alt}" loading="lazy">
-        <div class="p-card-body">
-          <div class="p-type-no">${roomType.type} 房型</div>
-          <p><b>坪數：</b>${roomType.area || '待確認'}</p>
-          <p><b>設備：</b>${roomType.equipment}</p>
-          <p><b>適用樓層：</b>${roomType.floors.join('、')}</p>
-        </div>
-      </article>`).join('');
-    document.getElementById('photo-note').textContent = property.photosNote;
-  </script>
+  <script src="/assets/js/tianshan-pages.js" defer></script>
 </body>
 </html>
