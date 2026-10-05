@@ -84,7 +84,9 @@
       galleryNote.textContent = "";
     }
 
-    document.getElementById("type-rent").textContent = property.rent + "；" + property.rentNote;
+    document.getElementById("type-rent").textContent = Number(type.monthlyRent).toLocaleString("en-US") + " 元／月";
+    document.getElementById("type-rent-discounts").textContent = property.rentDiscounts.join("\n");
+    document.getElementById("type-rent-note").textContent = property.rentTermsNote;
     document.getElementById("type-furniture").textContent = property.intro[1];
     document.getElementById("type-appliances").textContent = property.intro[2];
     document.getElementById("type-equipment-note").textContent = "以上為物件介紹所列家具家電；個別房型實際配置與使用狀況，請逐房確認。";
