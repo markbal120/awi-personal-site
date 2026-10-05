@@ -44,7 +44,7 @@
     "water": "每月免費5度，超過部分每度20元，退租時結算。",
     "electricity": "依各房間電表實際計算。"
   },
-  "sharedFacilitiesText": "大門電磁感應門鎖、24小時監視系統，各層有滅火器、消防送水廂、緊急照明、磚牆隔間防火隔音佳、1F以上不設鐵窗",
+  "sharedFacilitiesText": "大門電磁感應門鎖、24小時監視系統，各層有滅火器、消防送水箱、緊急照明、磚牆隔間、1F以上不設鐵窗",
   "sharedFacilities": [
     {
       "name": "一樓電梯口",
@@ -60,7 +60,7 @@
     },
     {
       "name": "頂樓公共設施",
-      "description": "投幣洗衣機、乾衣機、脫水機及頂樓曬衣空間。",
+      "description": "頂樓公共空間。",
       "image": "/assets/properties/tianshan/common/rooftop-common.jpg",
       "alt": "天山路頂樓公共空間"
     }
