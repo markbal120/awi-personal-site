@@ -300,7 +300,20 @@
         "708",
         "808"
       ],
-      "photos": []
+      "photos": [
+        {
+          "src": "/assets/properties/tianshan/types/08/08-01.jpg",
+          "alt": "天山路08房型代表照片 1"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/08/08-02.jpg",
+          "alt": "天山路08房型代表照片 2"
+        },
+        {
+          "src": "/assets/properties/tianshan/types/08/08-03.jpg",
+          "alt": "天山路08房型代表照片 3"
+        }
+      ]
     },
     {
       "type": "09",
