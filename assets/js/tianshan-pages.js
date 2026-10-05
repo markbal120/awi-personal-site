@@ -11,6 +11,16 @@
   }
 
   function renderProperty(property) {
+    var rentSummary = document.getElementById("rent-summary");
+    if (rentSummary) {
+      var roomRents = property.roomTypes.map(function (type) { return Number(type.monthlyRent); }).filter(function (rent) { return Number.isFinite(rent); });
+      if (roomRents.length) {
+        var minRent = Math.min.apply(null, roomRents).toLocaleString("en-US");
+        var maxRent = Math.max.apply(null, roomRents).toLocaleString("en-US");
+        rentSummary.textContent = "各房型月租 " + minRent + "～" + maxRent + " 元";
+      }
+    }
+
     var facilities = document.getElementById("facility-grid");
     if (facilities) {
       facilities.innerHTML = property.sharedFacilities.map(function (item) {
