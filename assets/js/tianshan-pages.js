@@ -87,8 +87,16 @@
     document.getElementById("type-rent").textContent = Number(type.monthlyRent).toLocaleString("en-US") + " 元／月";
     document.getElementById("type-rent-discounts").textContent = property.rentDiscounts.join("\n");
     document.getElementById("type-rent-note").textContent = property.rentTermsNote;
-    document.getElementById("type-furniture").textContent = property.intro[1];
-    document.getElementById("type-appliances").textContent = property.intro[2];
+    var equipment = type.equipment || property.roomEquipment;
+    var equipmentGrid = document.getElementById("type-equipment-grid");
+    equipmentGrid.innerHTML = [
+      { title: "家具", items: equipment.furniture },
+      { title: "家電", items: equipment.appliances }
+    ].map(function (group) {
+      return '<article class="p-card tianshan-equipment-card"><div class="p-card-body"><h3>' + escapeHtml(group.title) +
+        '</h3><ul>' + group.items.map(function (item) { return '<li>' + escapeHtml(item) + '</li>'; }).join("") +
+        '</ul></div></article>';
+    }).join("");
     document.getElementById("type-equipment-note").textContent = "以上為物件介紹所列家具家電；個別房型實際配置與使用狀況，請逐房確認。";
 
     var utilities = document.getElementById("type-utilities");

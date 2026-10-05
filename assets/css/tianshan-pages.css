@@ -16,6 +16,11 @@
 .tianshan-rent-details{margin-top:12px}
 .tianshan-rent-details p{margin:0 0 8px;color:var(--property-muted);line-height:1.55;white-space:pre-line}
 .tianshan-rent-details p:last-child{margin-bottom:0;font-size:.9rem}
+.tianshan-equipment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.tianshan-equipment-card .p-card-body{height:100%}
+.tianshan-equipment-card ul{margin:12px 0 0;padding-left:1.25rem;color:var(--property-muted)}
+.tianshan-equipment-card li{line-height:1.65;overflow-wrap:anywhere}
+.tianshan-equipment-note{margin:16px 0 0;line-height:1.6;overflow-wrap:anywhere}
 .tianshan-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
 .tianshan-gallery-item{min-width:0;overflow:hidden;border:1px solid var(--property-line);border-radius:18px;background:var(--property-panel);color:var(--property-muted)}
 .tianshan-gallery-item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--property-panel2)}
@@ -32,4 +37,4 @@
 .tianshan-type-cta p{margin:0;color:var(--property-muted)}
 .tianshan-type-cta .p-btn{flex-shrink:0}
 @media(max-width:900px){.tianshan-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.tianshan-room-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){.tianshan-type-facts,.tianshan-gallery,.tianshan-room-list{grid-template-columns:1fr}.tianshan-type-hero{padding:48px 0 38px}.tianshan-type-cta{align-items:flex-start;flex-direction:column;padding:22px}}
+@media(max-width:620px){.tianshan-type-facts,.tianshan-gallery,.tianshan-room-list,.tianshan-equipment-grid{grid-template-columns:1fr}.tianshan-type-hero{padding:48px 0 38px}.tianshan-type-cta{align-items:flex-start;flex-direction:column;padding:22px}}
