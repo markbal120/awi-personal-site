@@ -1,0 +1,190 @@
+/* Shared property cards used by the homepage and property overview only. */
+.property-listings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.property-listing-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(101, 232, 216, .2);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(16, 39, 43, .96), rgba(10, 27, 30, .96));
+  color: var(--text, var(--property-text, #eaf7f6));
+  box-shadow: 0 16px 38px rgba(0, 0, 0, .16);
+}
+
+.property-listing-card__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #10272b;
+}
+
+.property-listing-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-listing-card__media.is-image-missing {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #10272b, #0d1d21);
+}
+
+.property-listing-card__placeholder {
+  padding: 20px;
+  color: #9db5b7;
+  text-align: center;
+}
+
+.property-listing-card__photo-label {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  max-width: calc(100% - 24px);
+  padding: 5px 11px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 999px;
+  background: rgba(7, 19, 22, .82);
+  color: #eaf7f6;
+  font-size: .82rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.property-listing-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+}
+
+.property-listing-card__location {
+  margin: 0 0 5px;
+  color: #65e8d8;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.property-listing-card__title {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.property-listing-card__rent {
+  margin: 12px 0 0;
+  color: #eaf7f6;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.property-listing-card__availability {
+  margin: 7px 0 0;
+  color: #b6cccd;
+  font-size: .94rem;
+  overflow-wrap: anywhere;
+}
+
+.property-listing-card__cta {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 11px 19px;
+  border: 1px solid #25d0bd;
+  border-radius: 999px;
+  background: #25d0bd;
+  color: #04201d;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.property-listing-card__cta:hover {
+  transform: translateY(-2px);
+  background: #65e8d8;
+  box-shadow: 0 10px 26px rgba(37, 208, 189, .2);
+}
+
+.property-listing-card__cta:focus-visible,
+.property-listings__retry:focus-visible {
+  outline: 3px solid #eaf7f6;
+  outline-offset: 3px;
+}
+
+.property-listings__status,
+.property-listings__error {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 18px 20px;
+  border: 1px solid rgba(101, 232, 216, .22);
+  border-radius: 16px;
+  background: rgba(13, 29, 33, .88);
+  color: #b6cccd;
+}
+
+.property-listings__error {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-color: rgba(255, 190, 120, .42);
+}
+
+.property-listings__retry {
+  min-height: 42px;
+  padding: 9px 16px;
+  border: 1px solid #25d0bd;
+  border-radius: 999px;
+  background: transparent;
+  color: #65e8d8;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+@media (max-width: 899px) {
+  .property-listings {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .property-listing-card {
+    width: min(100%, 680px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .property-listings {
+    gap: 16px;
+    margin-top: 22px;
+  }
+
+  .property-listing-card {
+    border-radius: 18px;
+  }
+
+  .property-listing-card__body {
+    padding: 18px;
+  }
+
+  .property-listing-card__cta {
+    width: 100%;
+  }
+}
