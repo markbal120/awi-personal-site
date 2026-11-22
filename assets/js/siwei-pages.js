@@ -5,7 +5,7 @@
   var isFileProtocol = window.location.protocol === "file:";
 
   var fallbackData = {
-  "schemaVersion": "2.0",
+  "schemaVersion": "2.6.0-adapted",
   "slug": "siwei",
   "name": "四維三路59號分租套房",
   "area": "高雄市苓雅區",
@@ -20,7 +20,7 @@
   "elevator": false,
   "suiteArea": "分租套房約4～6坪",
   "rent": "月租 5,000～8,610 元",
-  "rentSummary": "各房月租 5,000～8,610 元",
+  "rentSummary": "月租 6,600 元",
   "rentNote": "各房間租金固定明確；租金包含水費、網路、第四台、垃圾集中處理費；電費依各房獨立電表按台電帳單分攤。",
   "rentDiscounts": [],
   "rentTermsNote": "押金2個月。租金包含水費、寬頻網路、第四台、專人垃圾集中處理；電費依全棟台電帳單按各房間獨立電表實際用電分攤。",
@@ -72,34 +72,20 @@
   "availability": {
     "availableRooms": [
       {
-        "room": "307",
-        "floor": "3F",
-        "rent": 6500,
-        "type": "04",
-        "typeName": "307 / 507 套房（同格局）",
-        "badge": "超值釋出・預約帶看",
-        "coverImage": "/assets/properties/siwei/rooms/507/IMG_4572.jpg",
-        "imageDisclaimer": "507房實景｜307同格局參考，實際現況以現場帶看為準"
-      },
-      {
-        "room": "605",
-        "floor": "6F",
-        "rent": 6800,
-        "type": "10",
-        "typeName": "605 獨立套房",
-        "badge": "實景可看・立即預約",
-        "coverImage": "/assets/properties/siwei/rooms/605/243718.jpg",
-        "imageDisclaimer": "605房實景拍攝"
-      },
-      {
         "room": "606",
+        "roomId": "606",
         "floor": "6F",
-        "rent": 6800,
+        "rent": 6600,
+        "deposit": 13200,
         "type": "11",
         "typeName": "606 獨立套房",
         "badge": "實景可看・立即預約",
         "coverImage": "/assets/properties/siwei/rooms/606/IMG_4546.jpg",
-        "imageDisclaimer": "606房實景拍攝"
+        "imageDisclaimer": "606房實景拍攝",
+        "status": "VACANT",
+        "rentalEligibility": "AVAILABLE_FOR_RENT",
+        "sourceCoord": "115.11.20!BV60",
+        "candidateKey": "四維_606_BV60"
       }
     ],
     "confirmedRentedRooms": [
@@ -116,9 +102,13 @@
       "601",
       "602",
       "603",
+      "605",
       "607"
     ],
-    "note": "目前對外公開招租為 307、605、606 共 3 間；其餘房號目前皆在租約中。"
+    "borrowedRooms": [
+      "307"
+    ],
+    "note": "目前對外公開招租為 606 共 1 間；307 維持借用暫不出租，其餘房號目前皆在租約中。"
   },
   "roomTypes": [
     {
@@ -290,14 +280,14 @@
         "507"
       ],
       "rentRange": "6,500～8,610 元／月",
-      "status": "307 空房釋出",
-      "isAvailable": true,
+      "status": "目前無空房",
+      "isAvailable": false,
       "rooms": [
         {
           "roomNumber": "307",
           "rent": 6500,
-          "status": "空房可預約",
-          "isAvailable": true
+          "status": "借用中（暫不出租）",
+          "isAvailable": false
         },
         {
           "roomNumber": "507",
@@ -343,7 +333,7 @@
         "308",
         "508"
       ],
-      "rentRange": "目前無空房",
+      "rentRange": "5,000 元／月",
       "status": "目前無空房",
       "isAvailable": false,
       "rooms": [
@@ -445,7 +435,8 @@
           "caption": "503房實景｜衛浴實況"
         }
       ],
-      "photoDisclaimer": "503 房實景拍攝，實際屋況以現場帶看為準。"
+      "photoDisclaimer": "503 房實景拍攝，實際屋況以現場帶看為準。",
+      "monthlyRent": 5800
     },
     {
       "type": "07",
@@ -466,7 +457,8 @@
         }
       ],
       "photos": [],
-      "photoDisclaimer": "六樓獨立格局，目前已出租；照片待補，以現場帶看為準。"
+      "photoDisclaimer": "六樓獨立格局，目前已出租；照片待補，以現場帶看為準。",
+      "monthlyRent": 6000
     },
     {
       "type": "08",
@@ -487,7 +479,8 @@
         }
       ],
       "photos": [],
-      "photoDisclaimer": "六樓獨立格局，目前已出租；照片待補，以現場帶看為準。"
+      "photoDisclaimer": "六樓獨立格局，目前已出租；照片待補，以現場帶看為準。",
+      "monthlyRent": 6500
     },
     {
       "type": "09",
@@ -539,7 +532,8 @@
           "caption": "603房實景｜淋浴設備"
         }
       ],
-      "photoDisclaimer": "603 房實景拍攝，實際屋況以現場帶看為準。"
+      "photoDisclaimer": "603 房實景拍攝，實際屋況以現場帶看為準。",
+      "monthlyRent": 8610
     },
     {
       "type": "10",
@@ -549,14 +543,14 @@
         "605"
       ],
       "rentRange": "6,800 元／月",
-      "status": "605 空房釋出",
-      "isAvailable": true,
+      "status": "目前無空房",
+      "isAvailable": false,
       "rooms": [
         {
           "roomNumber": "605",
           "rent": 6800,
-          "status": "空房可預約",
-          "isAvailable": true
+          "status": "已出租",
+          "isAvailable": false
         }
       ],
       "photos": [
@@ -596,7 +590,8 @@
           "caption": "605房實景｜房間入口動線"
         }
       ],
-      "photoDisclaimer": "605 房實景拍攝，實際現況以現場帶看為準。"
+      "photoDisclaimer": "605 房實景拍攝，實際現況以現場帶看為準。",
+      "monthlyRent": 6800
     },
     {
       "type": "11",
@@ -605,13 +600,13 @@
       "roomNumbers": [
         "606"
       ],
-      "rentRange": "6,800 元／月",
+      "rentRange": "6,600 元／月",
       "status": "606 空房釋出",
       "isAvailable": true,
       "rooms": [
         {
           "roomNumber": "606",
-          "rent": 6800,
+          "rent": 6600,
           "status": "空房可預約",
           "isAvailable": true
         }
@@ -648,7 +643,8 @@
           "caption": "606房實景｜衛浴熱水器"
         }
       ],
-      "photoDisclaimer": "606 房實景拍攝，實際現況以現場帶看為準。"
+      "photoDisclaimer": "606 房實景拍攝，實際現況以現場帶看為準。",
+      "monthlyRent": 6600
     },
     {
       "type": "12",
@@ -669,7 +665,8 @@
         }
       ],
       "photos": [],
-      "photoDisclaimer": "六樓獨立格局，目前已出租；照片待補，以現場帶看為準。"
+      "photoDisclaimer": "六樓獨立格局，目前已出租；照片待補，以現場帶看為準。",
+      "monthlyRent": 6000
     }
   ]
 };

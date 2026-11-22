@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.0",
+  "schemaVersion": "2.6.0-adapted",
   "slug": "tianshan",
   "name": "天山路電梯套房",
   "area": "高雄市前鎮區",
@@ -68,18 +68,87 @@
   "availability": {
     "availableRooms": [
       "206",
-      "305",
       "506",
-      "707",
-      "803",
+      "801",
+      "806",
       "809"
     ],
     "confirmedRentedRooms": [
       "203",
       "207",
-      "705"
+      "305",
+      "705",
+      "707",
+      "803"
     ],
-    "note": "其他房號的可租狀態及看房時間，請透過LINE確認。"
+    "note": "其他房號的可租狀態及看房時間，請透過LINE確認。",
+    "availableRoomObjects": [
+      {
+        "roomId": "206",
+        "floor": "2F",
+        "rent": 6600,
+        "deposit": 13200,
+        "status": "VACANT",
+        "rentalEligibility": "AVAILABLE_FOR_RENT",
+        "displayStatus": "超值釋出・預約帶看",
+        "coverImage": "/assets/properties/tianshan/types/06/06-01.jpg",
+        "imageDisclaimer": "房型代表照片，實際現況以現場帶看為準。",
+        "sourceCoord": "115.11.20!BD11",
+        "candidateKey": "天山_206_BD11"
+      },
+      {
+        "roomId": "506",
+        "floor": "5F",
+        "rent": 6600,
+        "deposit": 13200,
+        "status": "VACANT",
+        "rentalEligibility": "AVAILABLE_FOR_RENT",
+        "displayStatus": "超值釋出・預約帶看",
+        "coverImage": "/assets/properties/tianshan/types/06/06-01.jpg",
+        "imageDisclaimer": "房型代表照片，實際現況以現場帶看為準。",
+        "sourceCoord": "115.11.20!BD27",
+        "candidateKey": "天山_506_BD27"
+      },
+      {
+        "roomId": "801",
+        "floor": "8F",
+        "rent": 8000,
+        "deposit": 16000,
+        "status": "VACANT",
+        "rentalEligibility": "AVAILABLE_FOR_RENT",
+        "displayStatus": "超值釋出・預約帶看",
+        "coverImage": "/assets/properties/tianshan/types/01/01-01.jpg",
+        "imageDisclaimer": "房型代表照片，實際現況以現場帶看為準。",
+        "sourceCoord": "115.11.20!BD47",
+        "candidateKey": "天山_801_BD47"
+      },
+      {
+        "roomId": "806",
+        "floor": "8F",
+        "rent": 6600,
+        "deposit": 13200,
+        "status": "VACANT",
+        "rentalEligibility": "AVAILABLE_FOR_RENT",
+        "displayStatus": "超值釋出・預約帶看",
+        "coverImage": "/assets/properties/tianshan/types/06/06-01.jpg",
+        "imageDisclaimer": "房型代表照片，實際現況以現場帶看為準。",
+        "sourceCoord": "115.11.20!BD51",
+        "candidateKey": "天山_806_BD51"
+      },
+      {
+        "roomId": "809",
+        "floor": "8F",
+        "rent": 6700,
+        "deposit": 13400,
+        "status": "VACANT",
+        "rentalEligibility": "AVAILABLE_FOR_RENT",
+        "displayStatus": "超值釋出・預約帶看",
+        "coverImage": "/assets/properties/tianshan/types/09/09-01.jpg",
+        "imageDisclaimer": "房型代表照片，實際現況以現場帶看為準。",
+        "sourceCoord": "115.11.20!BD54",
+        "candidateKey": "天山_809_BD54"
+      }
+    ]
   },
   "roomTypes": [
     {
@@ -321,7 +390,7 @@
     },
     {
       "type": "09",
-      "monthlyRent": 6500,
+      "monthlyRent": 6700,
       "representativeRoom": "709",
       "roomNumbers": [
         "209",
@@ -356,5 +425,6 @@
     }
   ],
   "photosNote": "房型代表照片，實際房間配置及屋況依現場為準。",
-  "lineUrl": "https://lin.ee/741U2pz"
+  "lineUrl": "https://lin.ee/741U2pz",
+  "rentSummary": "月租 6,600～8,000 元"
 }

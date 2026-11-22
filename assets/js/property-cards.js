@@ -17,17 +17,37 @@
       var availableRooms = property.availability && Array.isArray(property.availability.availableRooms)
         ? property.availability.availableRooms
         : [];
-      var room605 = availableRooms.find(function (room) { return room && room.room === "605"; });
-      var source = room605 && typeof room605.coverImage === "string" ? room605.coverImage : "";
-      var type605 = types.find(function (type) { return type && type.type === "10"; });
-      var photo605 = type605 && Array.isArray(type605.photos)
-        ? type605.photos.find(function (photo) { return photo && photo.src === source; })
-        : null;
+      var activeRoom = availableRooms.find(function (room) {
+        return room && typeof room.coverImage === "string" && room.coverImage.trim() !== "";
+      });
+
+      if (activeRoom) {
+        var activeSource = activeRoom.coverImage;
+        var activeRoomNo = text(activeRoom.room || activeRoom.roomId).trim();
+        var activeType = types.find(function (type) { return type && type.type === activeRoom.type; });
+        var activePhoto = activeType && Array.isArray(activeType.photos)
+          ? activeType.photos.find(function (photo) { return photo && photo.src === activeSource; })
+          : null;
+        var disclaimer = text(activeRoom.imageDisclaimer);
+        var isRepresentative = disclaimer.indexOf("代表") !== -1 || disclaimer.indexOf("同格局") !== -1;
+
+        return {
+          src: activeSource,
+          alt: text(activePhoto && activePhoto.alt) || disclaimer || ("四維三路 " + activeRoomNo + " 房照片"),
+          label: activeRoomNo ? (activeRoomNo + (isRepresentative ? " 房型參考照" : " 房實景")) : "房型實景"
+        };
+      }
+
+      var fallbackType = types.find(function (type) {
+        return type && Array.isArray(type.photos) && type.photos.length > 0 && type.photos[0] && type.photos[0].src;
+      });
+      var fallbackPhoto = fallbackType ? fallbackType.photos[0] : null;
+      var repRoom = text(fallbackType && fallbackType.representativeRoom).trim();
 
       return {
-        src: source,
-        alt: text(photo605 && photo605.alt) || text(room605 && room605.imageDisclaimer) || "四維三路 605 房照片",
-        label: "605 房實景"
+        src: text(fallbackPhoto && fallbackPhoto.src),
+        alt: text(fallbackPhoto && fallbackPhoto.alt) || "四維三路房型實景參考",
+        label: repRoom ? (repRoom + " 房型參考照") : "房型參考照"
       };
     }
 
