@@ -3,7 +3,8 @@
 
   var PROPERTY_SOURCES = [
     { slug: "siwei", jsonUrl: "/properties/data/siwei.json", detailUrl: "/properties/siwei/" },
-    { slug: "tianshan", jsonUrl: "/properties/data/tianshan.json", detailUrl: "/properties/tianshan/" }
+    { slug: "tianshan", jsonUrl: "/properties/data/tianshan.json", detailUrl: "/properties/tianshan/" },
+    { slug: "guangdong", jsonUrl: "/properties/data/guangdong.json", detailUrl: "/properties/guangdong/" }
   ];
 
   function text(value) {
@@ -53,9 +54,10 @@
 
     var type01 = types.find(function (type) { return type && type.type === "01"; });
     var photo01 = type01 && Array.isArray(type01.photos) ? type01.photos[0] : null;
+    var defaultAlt = slug === "guangdong" ? "廣東二街57號 01 房型代表照片" : "天山路 01 房型代表照片";
     return {
       src: text(photo01 && photo01.src),
-      alt: text(photo01 && photo01.alt) || "天山路 01 房型代表照片",
+      alt: text(photo01 && photo01.alt) || defaultAlt,
       label: "01 房型代表照"
     };
   }
@@ -65,7 +67,7 @@
     var rents = [];
     var hasMissingRent = false;
 
-    if (!roomNumbers.length) return "目前租金待確認";
+    if (!roomNumbers.length) return text(property.rent).trim() || "目前租金待確認";
 
     roomNumbers.forEach(function (roomNumber) {
       var rent;
@@ -137,7 +139,9 @@
     var photo = getPhoto(property, source.slug);
     var supplemental = validRoomNumbers.length
       ? "目前可洽詢 " + validRoomNumbers.length + " 間：" + validRoomNumbers.join("、")
-      : "目前可租房況待確認";
+      : (availability.confirmedRentedRooms && availability.confirmedRentedRooms.length
+          ? "目前無空房（可洽詢候補）"
+          : "目前可租房況待確認");
 
     if (incompleteRoomData) supplemental += "（部分房號資料待確認）";
 

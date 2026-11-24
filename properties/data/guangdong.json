@@ -1,0 +1,512 @@
+{
+  "schemaVersion": "2.0",
+  "slug": "guangdong",
+  "name": "廣東二街57號分租套房",
+  "area": "高雄市苓雅區",
+  "publicLocation": "廣東二街57號（近光華夜市、三和市場）",
+  "address": "高雄市苓雅區廣東二街57號",
+  "buildingFloors": "1F、2F、3F、5F",
+  "floorsWithRooms": [
+    "1F",
+    "2F",
+    "3F",
+    "5F"
+  ],
+  "elevator": true,
+  "suiteArea": "分租套房約 3.5～8 坪",
+  "rent": "月租 5,800～8,610 元",
+  "rentSummary": "各房月租 5,800～8,610 元（目前無空房）",
+  "rentNote": "租金包含水費、網路、第四台；電費依全棟電費攤算。",
+  "rentDiscounts": [
+    "半年繳：每月租金折 200 元",
+    "年繳：每月租金折 300 元"
+  ],
+  "rentTermsNote": "押金 2 個月。租金包含水費、寬頻網路、第四台；電費依照全棟電費攤算。半年繳每月折 200 元，年繳每月折 300 元。",
+  "intro": [
+    "本物件位於高雄市苓雅區廣東二街57號，鄰近光華夜市與三和市場，生活採買與餐飲機能便利。",
+    "建物配備電梯，全棟規劃 15 間分租套房（約 3.5～8 坪），每間房皆配置書桌椅、衣櫃、冷氣、電視、冰箱、電熱水器與獨立 Wi-Fi。",
+    "公共區域設有冰溫熱三用飲水機、投幣式洗衣機、投幣式乾衣機、脫水機與電梯。"
+  ],
+  "roomEquipment": {
+    "furniture": [
+      "書桌椅（每房皆有）",
+      "衣櫃",
+      "床組（101 房為雙人床，其餘房型為單人床）"
+    ],
+    "appliances": [
+      "冷氣",
+      "電視",
+      "冰箱",
+      "電熱水器",
+      "獨立 Wi-Fi"
+    ]
+  },
+  "utilities": {
+    "water": "租金已包含水費。",
+    "electricity": "依照全棟電費攤算。"
+  },
+  "sharedFacilitiesText": "電梯、冰溫熱三用飲水機、投幣式洗衣機、投幣式乾衣機、脫水機",
+  "sharedFacilities": [
+    {
+      "name": "電梯",
+      "description": "建物設有電梯，上下樓搬運與日常進出方便。",
+      "image": "/assets/properties/guangdong/common/elevator.jpg",
+      "alt": "廣東二街57號電梯"
+    },
+    {
+      "name": "冰溫熱三用飲水機",
+      "description": "公共區域設有冰溫熱三用飲水機供住戶使用。",
+      "image": "/assets/properties/guangdong/common/dispenser.jpg",
+      "alt": "廣東二街57號冰溫熱三用飲水機"
+    },
+    {
+      "name": "投幣式乾衣機、脫水機",
+      "description": "公共洗衣空間設有投幣式乾衣機與脫水機（另有投幣式洗衣機，照片待補）。",
+      "image": "/assets/properties/guangdong/common/dryer-dehydrator.jpg",
+      "alt": "廣東二街57號投幣式乾衣機與脫水機"
+    }
+  ],
+  "lineUrl": "https://lin.ee/741U2pz",
+  "availability": {
+    "availableRooms": [],
+    "confirmedRentedRooms": [
+      "101",
+      "102",
+      "103",
+      "201",
+      "202",
+      "203",
+      "205",
+      "301",
+      "302",
+      "303",
+      "305",
+      "501",
+      "502",
+      "505"
+    ],
+    "unavailableRooms": [
+      "503"
+    ],
+    "note": "目前全棟 14 間已出租、503 整理中暫不出租；如需候補通知或確認最新房況，請透過 LINE 洽詢。"
+  },
+  "roomTypes": [
+    {
+      "type": "01",
+      "name": "101室套房",
+      "representativeRoom": "101",
+      "roomNumbers": [
+        "101"
+      ],
+      "area": "8 坪",
+      "bedType": "雙人床",
+      "rentRange": "8,500 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "101",
+          "rent": 8500,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/guangdong/types/01/01-01.jpg",
+          "alt": "廣東二街57號 101 房實景 1",
+          "caption": "101 房實景拍攝（1）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/01/01-02.jpg",
+          "alt": "廣東二街57號 101 房實景 2",
+          "caption": "101 房實景拍攝（2）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/01/01-03.jpg",
+          "alt": "廣東二街57號 101 房實景 3",
+          "caption": "101 房實景拍攝（3）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/01/01-04.jpg",
+          "alt": "廣東二街57號 101 房實景 4",
+          "caption": "101 房實景拍攝（4）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/01/01-05.jpg",
+          "alt": "廣東二街57號 101 房實景 5",
+          "caption": "101 房實景拍攝（5）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/01/01-06.jpg",
+          "alt": "廣東二街57號 101 房實景 6",
+          "caption": "101 房實景拍攝（6）"
+        }
+      ],
+      "photoDisclaimer": "房型代表照片，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "02",
+      "name": "102、103室套房",
+      "representativeRoom": "102",
+      "roomNumbers": [
+        "102",
+        "103"
+      ],
+      "area": "4.7 坪",
+      "bedType": "單人床",
+      "rentRange": "6,500 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "102",
+          "rent": 6500,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "103",
+          "rent": 6500,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/guangdong/types/02/02-01.jpg",
+          "alt": "廣東二街57號 102 房實景（102/103對稱格局參考）1",
+          "caption": "102 房實景｜102/103 對稱格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/02/02-02.jpg",
+          "alt": "廣東二街57號 102 房實景（102/103對稱格局參考）2",
+          "caption": "102 房實景｜102/103 對稱格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/02/02-03.jpg",
+          "alt": "廣東二街57號 102 房實景（102/103對稱格局參考）3",
+          "caption": "102 房實景｜102/103 對稱格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/02/02-04.jpg",
+          "alt": "廣東二街57號 102 房實景（102/103對稱格局參考）4",
+          "caption": "102 房實景｜102/103 對稱格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/02/02-05.jpg",
+          "alt": "廣東二街57號 102 房實景（102/103對稱格局參考）5",
+          "caption": "102 房實景｜102/103 對稱格局參考（5）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 102 房實景拍攝；103 為對稱格局房間，房型代表照片，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "03",
+      "name": "201 / 301 / 501 套房（4.7坪・單人床）",
+      "representativeRoom": "301",
+      "roomNumbers": [
+        "201",
+        "301",
+        "501"
+      ],
+      "area": "4.7 坪",
+      "bedType": "單人床",
+      "rentRange": "7,000～8,610 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "201",
+          "rent": 8610,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "301",
+          "rent": 7000,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "501",
+          "rent": 8610,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/guangdong/types/03/03-01.jpg",
+          "alt": "廣東二街57號 301 房實景（201/301/501同格局參考）1",
+          "caption": "301 房實景｜201/301/501 同格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/03/03-02.jpg",
+          "alt": "廣東二街57號 301 房實景（201/301/501同格局參考）2",
+          "caption": "301 房實景｜201/301/501 同格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/03/03-03.jpg",
+          "alt": "廣東二街57號 301 房實景（201/301/501同格局參考）3",
+          "caption": "301 房實景｜201/301/501 同格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/03/03-04.jpg",
+          "alt": "廣東二街57號 301 房實景（201/301/501同格局參考）4",
+          "caption": "301 房實景｜201/301/501 同格局參考（4）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 301 房實景拍攝；房型代表照片，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "04",
+      "name": "202 / 302 / 502 套房（4.7坪・單人床）",
+      "representativeRoom": "302",
+      "roomNumbers": [
+        "202",
+        "302",
+        "502"
+      ],
+      "area": "4.7 坪",
+      "bedType": "單人床",
+      "rentRange": "7,000～8,610 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "202",
+          "rent": 7000,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "302",
+          "rent": 8610,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "502",
+          "rent": 7000,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/guangdong/types/04/04-01.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 1",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-02.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 2",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-03.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 3",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-04.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 4",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-05.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 5",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（5）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-06.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 6",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（6）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-07.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 7",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（7）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-08.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 8",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（8）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-09.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 9",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（9）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-10.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 10",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（10）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-11.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 11",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（11）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-12.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 12",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（12）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-13.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 13",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（13）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/04/04-14.jpg",
+          "alt": "廣東二街57號 04 房型代表照片 14",
+          "caption": "302/502 房實景｜202/302/502 同格局參考（14）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 302 與 502 房實景拍攝；房型代表照片，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "05",
+      "name": "203 / 303 / 503 套房（3.5坪・單人床）",
+      "representativeRoom": "303",
+      "roomNumbers": [
+        "203",
+        "303",
+        "503"
+      ],
+      "area": "3.5 坪",
+      "bedType": "單人床",
+      "rentRange": "5,800～6,500 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "203",
+          "rent": 6500,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "303",
+          "rent": 5800,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "503",
+          "rent": 6500,
+          "status": "整理中（暫不出租）",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/guangdong/types/05/05-01.jpg",
+          "alt": "廣東二街57號 303 房實景（203/303/503同格局參考）1",
+          "caption": "303 房實景｜203/303/503 同格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/05/05-02.jpg",
+          "alt": "廣東二街57號 303 房實景（203/303/503同格局參考）2",
+          "caption": "303 房實景｜203/303/503 同格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/05/05-03.jpg",
+          "alt": "廣東二街57號 303 房實景（203/303/503同格局參考）3",
+          "caption": "303 房實景｜203/303/503 同格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/05/05-04.jpg",
+          "alt": "廣東二街57號 303 房實景（203/303/503同格局參考）4",
+          "caption": "303 房實景｜203/303/503 同格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/05/05-05.jpg",
+          "alt": "廣東二街57號 303 房實景（203/303/503同格局參考）5",
+          "caption": "303 房實景｜203/303/503 同格局參考（5）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 303 房實景拍攝；503 目前整理中暫不出租，房型代表照片，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "06",
+      "name": "205 / 305 / 505 套房（4.7坪・單人床）",
+      "representativeRoom": "505",
+      "roomNumbers": [
+        "205",
+        "305",
+        "505"
+      ],
+      "area": "4.7 坪",
+      "bedType": "單人床",
+      "rentRange": "6,600～7,000 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "205",
+          "rent": 6800,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "305",
+          "rent": 6600,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "505",
+          "rent": 7000,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/guangdong/types/06/06-01.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）1",
+          "caption": "505 房實景｜205/305/505 同格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-02.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）2",
+          "caption": "505 房實景｜205/305/505 同格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-03.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）3",
+          "caption": "505 房實景｜205/305/505 同格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-04.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）4",
+          "caption": "505 房實景｜205/305/505 同格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-05.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）5",
+          "caption": "505 房實景｜205/305/505 同格局參考（5）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-06.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）6",
+          "caption": "505 房實景｜205/305/505 同格局參考（6）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-07.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）7",
+          "caption": "505 房實景｜205/305/505 同格局參考（7）"
+        },
+        {
+          "src": "/assets/properties/guangdong/types/06/06-08.jpg",
+          "alt": "廣東二街57號 505 房實景（205/305/505同格局參考）8",
+          "caption": "505 房實景｜205/305/505 同格局參考（8）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 505 房實景拍攝；房型代表照片，實際現況以現場帶看為準。"
+    }
+  ]
+}
