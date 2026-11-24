@@ -93,7 +93,7 @@
   "roomTypes": [
     {
       "type": "01",
-      "name": "101室套房",
+      "name": "101 獨立大套房（8坪・雙人床）",
       "representativeRoom": "101",
       "roomNumbers": [
         "101"
@@ -113,13 +113,13 @@
       ],
       "photos": [
         {
-          "src": "/assets/properties/guangdong/types/01/01-01.jpg",
-          "alt": "廣東二街57號 101 房實景 1",
+          "src": "/assets/properties/guangdong/types/01/01-02.jpg",
+          "alt": "廣東二街57號 101 房實景（室內空間）",
           "caption": "101 房實景拍攝（1）"
         },
         {
-          "src": "/assets/properties/guangdong/types/01/01-02.jpg",
-          "alt": "廣東二街57號 101 房實景 2",
+          "src": "/assets/properties/guangdong/types/01/01-01.jpg",
+          "alt": "廣東二街57號 101 房實景（衛浴空間）",
           "caption": "101 房實景拍攝（2）"
         },
         {
@@ -147,7 +147,7 @@
     },
     {
       "type": "02",
-      "name": "102、103室套房",
+      "name": "102 / 103 對稱格局套房（4.7坪・單人床）",
       "representativeRoom": "102",
       "roomNumbers": [
         "102",
