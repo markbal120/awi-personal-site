@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "2.0",
+  "slug": "shandong",
+  "name": "山東街37巷5號5、6樓分租套房",
+  "area": "高雄市三民區",
+  "publicLocation": "山東街37巷5號5樓（近高醫商圈、熱河夜市、台鐵民族站）",
+  "address": "高雄市三民區山東街37巷5號5樓",
+  "buildingFloors": "5F、6F（公寓無電梯）",
+  "floorsWithRooms": [
+    "5F",
+    "6F"
+  ],
+  "elevator": false,
+  "suiteArea": "分租套房約 5.6 坪",
+  "rent": "月租 5,300～6,700 元",
+  "rentSummary": "目前可租 503 房：月租 5,500 元",
+  "rentNote": "租金包含水費、網路、第四台；電費依本戶台電均價乘以各房獨立電表實際用電度數計算。",
+  "rentDiscounts": [
+    "半年繳：每月租金折 200 元",
+    "年繳：每月租金折 300 元"
+  ],
+  "rentTermsNote": "押金 2 個月。租金包含水費、寬頻網路、第四台；電費以本戶台電均價 × 房間電表用電度數計算。半年繳每月折 200 元，年繳每月折 300 元。",
+  "intro": [
+    "本物件位於高雄市三民區山東街37巷5號5樓（5、6 樓分租套房），鄰近高醫商圈、熱河夜市與台鐵民族站，餐飲採買與交通機能便利。",
+    "全棟共 9 間獨立格局套房（每間約 5.6 坪，配置雙人床），房內附設書桌椅、衣櫃、冷氣、電視、冰箱、電熱水器與獨立 Wi-Fi。",
+    "建物為公寓（無電梯），公共區域設有冰溫熱三用飲水機、投幣式洗衣機與晾衣空間。"
+  ],
+  "roomEquipment": {
+    "furniture": [
+      "雙人床",
+      "書桌椅",
+      "衣櫃"
+    ],
+    "appliances": [
+      "冷氣",
+      "電視",
+      "冰箱",
+      "電熱水器",
+      "獨立 Wi-Fi"
+    ]
+  },
+  "utilities": {
+    "water": "租金已包含水費。",
+    "electricity": "以本戶台電均價 × 各房間獨立電表用電度數計算。"
+  },
+  "sharedFacilitiesText": "冰溫熱三用飲水機、投幣式洗衣機、晾衣空間",
+  "sharedFacilities": [
+    {
+      "name": "冰溫熱三用飲水機",
+      "description": "公共區域設有 RO 冰溫熱三用飲水機供住戶使用。",
+      "image": "/assets/properties/shandong/common/dispenser.jpg",
+      "alt": "山東街37巷5號冰溫熱三用飲水機"
+    },
+    {
+      "name": "投幣式洗衣機",
+      "description": "6 樓公共走廊設有投幣式洗衣機與不銹鋼水槽。",
+      "image": "/assets/properties/shandong/common/washer.jpg",
+      "alt": "山東街37巷5號投幣式洗衣機"
+    },
+    {
+      "name": "晾衣空間",
+      "description": "6 樓公共走廊通風採光晾衣空間。",
+      "image": "/assets/properties/shandong/common/drying.jpg",
+      "alt": "山東街37巷5號晾衣空間"
+    }
+  ],
+  "lineUrl": "https://lin.ee/741U2pz",
+  "availability": {
+    "availableRooms": [
+      {
+        "room": "503",
+        "roomId": "503",
+        "floor": "5F",
+        "rent": 5500,
+        "deposit": 11000,
+        "type": "503",
+        "typeName": "503 套房（5.6坪・雙人床）",
+        "badge": "實景可看・立即預約",
+        "coverImage": "/assets/properties/shandong/types/503/503-01.jpg",
+        "imageDisclaimer": "503房實景拍攝，實際現況以現場帶看為準。"
+      }
+    ],
+    "confirmedRentedRooms": [
+      "501",
+      "502",
+      "505",
+      "506",
+      "601",
+      "602",
+      "603",
+      "605"
+    ],
+    "note": "目前對外公開招租為 503 房（月租 5,500 元）；其餘 8 間目前皆在租約中。"
+  },
+  "roomTypes": [
+    {
+      "type": "501",
+      "name": "501 套房（5.6坪・雙人床）",
+      "representativeRoom": "501",
+      "roomNumbers": [
+        "501"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "5,800 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "501",
+          "rent": 5800,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [],
+      "photoDisclaimer": "501 房目前已出租；實景照片待補，實際屋況以現場帶看為準。"
+    },
+    {
+      "type": "502",
+      "name": "502 套房（5.6坪・雙人床）",
+      "representativeRoom": "502",
+      "roomNumbers": [
+        "502"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "6,700 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "502",
+          "rent": 6700,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [],
+      "photoDisclaimer": "502 房目前已出租；實景照片待補，實際屋況以現場帶看為準。"
+    },
+    {
+      "type": "503",
+      "name": "503 套房（5.6坪・雙人床）",
+      "representativeRoom": "503",
+      "roomNumbers": [
+        "503"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "5,500 元／月",
+      "status": "503 空房釋出",
+      "isAvailable": true,
+      "rooms": [
+        {
+          "roomNumber": "503",
+          "rent": 5500,
+          "status": "空房可預約",
+          "isAvailable": true
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/shandong/types/503/503-01.jpg",
+          "alt": "山東街37巷5號 503 房實景 1",
+          "caption": "503 房實景｜室內空間與沙發茶几"
+        },
+        {
+          "src": "/assets/properties/shandong/types/503/503-02.jpg",
+          "alt": "山東街37巷5號 503 房實景 2",
+          "caption": "503 房實景｜雙人床與窗台採光"
+        },
+        {
+          "src": "/assets/properties/shandong/types/503/503-03.jpg",
+          "alt": "山東街37巷5號 503 房實景 3",
+          "caption": "503 房實景｜化妝鏡台與電視矮櫃"
+        },
+        {
+          "src": "/assets/properties/shandong/types/503/503-04.jpg",
+          "alt": "山東街37巷5號 503 房實景 4",
+          "caption": "503 房實景｜獨立衛浴與電熱水器"
+        },
+        {
+          "src": "/assets/properties/shandong/types/503/503-05.jpg",
+          "alt": "山東街37巷5號 503 房實景 5",
+          "caption": "503 房實景｜五樓 503 房門"
+        }
+      ],
+      "photoDisclaimer": "503 房實景拍攝，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "505",
+      "name": "505 套房（5.6坪・雙人床）",
+      "representativeRoom": "505",
+      "roomNumbers": [
+        "505"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "5,300 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "505",
+          "rent": 5300,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [],
+      "photoDisclaimer": "505 房目前已出租；實景照片待補，實際屋況以現場帶看為準。"
+    },
+    {
+      "type": "506",
+      "name": "506 套房（5.6坪・雙人床）",
+      "representativeRoom": "506",
+      "roomNumbers": [
+        "506"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "6,700 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "506",
+          "rent": 6700,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/shandong/types/506/506-01.jpg",
+          "alt": "山東街37巷5號 506 房實景 1",
+          "caption": "506 房實景｜室內空間與衛浴入口"
+        },
+        {
+          "src": "/assets/properties/shandong/types/506/506-02.jpg",
+          "alt": "山東街37巷5號 506 房實景 2",
+          "caption": "506 房實景｜冰箱、電視與收納配置"
+        },
+        {
+          "src": "/assets/properties/shandong/types/506/506-03.jpg",
+          "alt": "山東街37巷5號 506 房實景 3",
+          "caption": "506 房實景｜床鋪與梳妝台"
+        }
+      ],
+      "photoDisclaimer": "506 房實景拍攝，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "601",
+      "name": "601 套房（5.6坪・雙人床）",
+      "representativeRoom": "601",
+      "roomNumbers": [
+        "601"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "6,700 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "601",
+          "rent": 6700,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/shandong/types/601/601-01.jpg",
+          "alt": "山東街37巷5號 601 房實景 1",
+          "caption": "601 房實景｜藍色主題牆、雙人床與沙發"
+        },
+        {
+          "src": "/assets/properties/shandong/types/601/601-02.jpg",
+          "alt": "山東街37巷5號 601 房實景 2",
+          "caption": "601 房實景｜獨立衛浴與電熱水器"
+        }
+      ],
+      "photoDisclaimer": "601 房實景拍攝，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "602",
+      "name": "602 套房（5.6坪・雙人床）",
+      "representativeRoom": "602",
+      "roomNumbers": [
+        "602"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "6,700 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "602",
+          "rent": 6700,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/shandong/types/602/602-01.jpg",
+          "alt": "山東街37巷5號 602 房實景 1",
+          "caption": "602 房實景｜雙人床、沙發與茶几"
+        },
+        {
+          "src": "/assets/properties/shandong/types/602/602-02.jpg",
+          "alt": "山東街37巷5號 602 房實景 2",
+          "caption": "602 房實景｜室內全景視角"
+        },
+        {
+          "src": "/assets/properties/shandong/types/602/602-03.jpg",
+          "alt": "山東街37巷5號 602 房實景 3",
+          "caption": "602 房實景｜衣櫃與玄關動線"
+        }
+      ],
+      "photoDisclaimer": "602 房實景拍攝，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "603",
+      "name": "603 套房（5.6坪・雙人床）",
+      "representativeRoom": "603",
+      "roomNumbers": [
+        "603"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "6,700 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "603",
+          "rent": 6700,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/shandong/types/603/603-01.jpg",
+          "alt": "山東街37巷5號 603 房實景 1",
+          "caption": "603 房實景｜雙人床、冰箱與沙發"
+        },
+        {
+          "src": "/assets/properties/shandong/types/603/603-02.jpg",
+          "alt": "山東街37巷5號 603 房實景 2",
+          "caption": "603 房實景｜雙人床墊、化妝台與書桌"
+        }
+      ],
+      "photoDisclaimer": "603 房實景拍攝，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "605",
+      "name": "605 套房（5.6坪・雙人床）",
+      "representativeRoom": "605",
+      "roomNumbers": [
+        "605"
+      ],
+      "area": "約 5.6 坪",
+      "bedType": "雙人床",
+      "rentRange": "6,700 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "rooms": [
+        {
+          "roomNumber": "605",
+          "rent": 6700,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/shandong/types/605/605-01.jpg",
+          "alt": "山東街37巷5號 605 房實景 1",
+          "caption": "605 房實景｜雙人床架、沙發與梳妝台"
+        },
+        {
+          "src": "/assets/properties/shandong/types/605/605-02.jpg",
+          "alt": "山東街37巷5號 605 房實景 2",
+          "caption": "605 房實景｜衣櫃、小冰箱與網路設備"
+        }
+      ],
+      "photoDisclaimer": "605 房實景拍攝，實際現況以現場帶看為準。"
+    }
+  ]
+}
