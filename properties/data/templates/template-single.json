@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "2.0",
+  "layoutMode": "single",
+  "slug": "example-office-or-house",
+  "category": "辦公室 / 店面 / 透天 / 整層住家",
+  "name": "範例整層住家或商辦店面",
+  "area": "高雄市○○區",
+  "publicLocation": "○○路○號（近○○站）",
+  "buildingFloors": "3F / 全棟 1-3F",
+  "suiteArea": "約 25 坪（3房2廳2衛）",
+  "rent": "月租 18,000 元",
+  "deposit": "押金 2 個月",
+  "isAvailable": true,
+  "status": "招租中・可預約看屋",
+  "rentNote": "管理費、水電費依台電／台水帳單計費。",
+  "intro": [
+    "適合家庭／工作室／辦公進駐。"
+  ],
+  "roomEquipment": {
+    "furniture": [
+      "冷氣",
+      "熱水器"
+    ],
+    "appliances": [
+      "天然瓦斯",
+      "採光陽台"
+    ]
+  },
+  "photos": [],
+  "photosNote": "現場實景拍攝，實際現況以現場帶看為準。",
+  "lineUrl": "https://lin.ee/741U2pz"
+}

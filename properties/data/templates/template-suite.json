@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "2.0",
+  "layoutMode": "suite",
+  "slug": "example-suite",
+  "name": "範例分租套房",
+  "area": "高雄市○○區",
+  "publicLocation": "○○路○號（近○○商圈／捷運站）",
+  "buildingFloors": "1F～4F（無電梯）",
+  "elevator": false,
+  "suiteArea": "約 5 坪",
+  "rent": "月租 6,000～7,500 元",
+  "rentSummary": "目前可租 1 間：月租 6,500 元",
+  "rentDiscounts": [
+    "半年繳：每月折 200 元",
+    "年繳：每月折 300 元"
+  ],
+  "rentTermsNote": "押金 2 個月；含水費、網路、第四台。",
+  "intro": [
+    "物件特色說明。"
+  ],
+  "roomEquipment": {
+    "furniture": [
+      "雙人床",
+      "衣櫃",
+      "書桌椅"
+    ],
+    "appliances": [
+      "冷氣",
+      "電視",
+      "冰箱",
+      "電熱水器",
+      "獨立 Wi-Fi"
+    ]
+  },
+  "sharedFacilities": [],
+  "lineUrl": "https://lin.ee/741U2pz",
+  "availability": {
+    "availableRooms": [],
+    "confirmedRentedRooms": [],
+    "note": ""
+  },
+  "roomTypes": []
+}
