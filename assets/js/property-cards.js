@@ -6,7 +6,8 @@
     { slug: "tianshan", jsonUrl: "/properties/data/tianshan.json", detailUrl: "/properties/tianshan/" },
     { slug: "guangdong", jsonUrl: "/properties/data/guangdong.json", detailUrl: "/properties/guangdong/" },
     { slug: "shandong", jsonUrl: "/properties/data/shandong.json", detailUrl: "/properties/shandong/" },
-    { slug: "yongkang-abc", jsonUrl: "/properties/data/yongkang-abc.json", detailUrl: "/properties/yongkang-abc/" }
+    { slug: "yongkang-abc", jsonUrl: "/properties/data/yongkang-abc.json", detailUrl: "/properties/yongkang-abc/" },
+    { slug: "lizhi", jsonUrl: "/properties/data/lizhi.json", detailUrl: "/properties/lizhi/" }
   ];
 
   function text(value) {
@@ -16,7 +17,7 @@
   function getPhoto(property, slug) {
     var types = Array.isArray(property.roomTypes) ? property.roomTypes : [];
 
-    if (slug === "siwei" || slug === "shandong" || slug === "yongkang-abc") {
+    if (slug === "siwei" || slug === "shandong" || slug === "yongkang-abc" || slug === "lizhi") {
       var availableRooms = property.availability && Array.isArray(property.availability.availableRooms)
         ? property.availability.availableRooms
         : [];
@@ -73,7 +74,7 @@
 
     roomNumbers.forEach(function (roomNumber) {
       var rent;
-      if (slug === "siwei" || slug === "shandong" || slug === "yongkang-abc") {
+      if (slug === "siwei" || slug === "shandong" || slug === "yongkang-abc" || slug === "lizhi") {
         var availableRooms = property.availability && Array.isArray(property.availability.availableRooms)
           ? property.availability.availableRooms
           : [];
@@ -118,7 +119,7 @@
     var roomNumbers;
     var incompleteRoomData = false;
 
-    if (source.slug === "siwei" || source.slug === "shandong" || source.slug === "yongkang-abc") {
+    if (source.slug === "siwei" || source.slug === "shandong" || source.slug === "yongkang-abc" || source.slug === "lizhi") {
       roomNumbers = availableRooms.map(function (room) {
         if (!room || room.room == null || text(room.room).trim() === "") {
           incompleteRoomData = true;

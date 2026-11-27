@@ -1,0 +1,414 @@
+{
+  "schemaVersion": "2.0",
+  "slug": "lizhi",
+  "name": "立志街22巷8弄1號分租套房",
+  "area": "高雄市三民區",
+  "publicLocation": "立志街22巷8弄1號（近高科大建工校區商圈、輕軌高雄高工站）",
+  "address": "高雄市三民區立志街22巷8弄1號",
+  "buildingFloors": "1F～4F（公寓無電梯）",
+  "floorsWithRooms": [
+    "1F",
+    "2F",
+    "3F",
+    "4F"
+  ],
+  "elevator": false,
+  "suiteArea": "分租套房約 4.3～5 坪",
+  "rent": "月租 4,700～6,000 元",
+  "rentSummary": "目前可租 202 房：月租 5,800 元",
+  "rentNote": "租金包含水費、網路、第四台；電費依全棟台電均價乘以各房獨立電表實際用電度數計算。",
+  "rentDiscounts": [
+    "半年繳：每月租金折 200 元",
+    "年繳：每月租金折 300 元"
+  ],
+  "rentTermsNote": "押金 2 個月租金。租金包含水費、網路、第四台；電費依照全棟台電均價 × 每個房間電表用電度數計算。半年繳每月折 200 元，年繳每月折 300 元。",
+  "intro": [
+    "本物件位於高雄市三民區立志街22巷8弄1號，鄰近高科大建工校區商圈與輕軌高雄高工站，生活機能與通勤便利。",
+    "1F～4F 共規劃 12 間分租套房（約 4.3～5 坪，3 種房型格局），每房皆附書桌椅、書櫃、衣櫃、電視、冷氣、冰箱、儲水式電熱水器與獨立網路。",
+    "建物無電梯，公共區域設有冰溫熱三用 RO 飲水機、脫水機與投幣式洗衣機。"
+  ],
+  "roomEquipment": {
+    "furniture": [
+      "書桌椅",
+      "書櫃",
+      "衣櫃"
+    ],
+    "appliances": [
+      "電視",
+      "冷氣",
+      "冰箱",
+      "儲水式電熱水器",
+      "獨立網路"
+    ]
+  },
+  "utilities": {
+    "water": "租金已包含水費。",
+    "electricity": "全棟台電均價 × 每個房間電表用電度數計算。"
+  },
+  "sharedFacilitiesText": "冰溫熱三用 RO 飲水機、脫水機、投幣式洗衣機",
+  "sharedFacilities": [
+    {
+      "name": "公共設施實景（1）",
+      "description": "公共區域設有冰溫熱三用 RO 飲水機、脫水機與投幣式洗衣機。",
+      "image": "/assets/properties/lizhi/common/common-01.jpg",
+      "alt": "立志街22巷8弄1號公共設施（飲水機／脫水機／投幣式洗衣機）1"
+    },
+    {
+      "name": "公共設施實景（2）",
+      "description": "公共區域設有冰溫熱三用 RO 飲水機、脫水機與投幣式洗衣機。",
+      "image": "/assets/properties/lizhi/common/common-02.jpg",
+      "alt": "立志街22巷8弄1號公共設施（飲水機／脫水機／投幣式洗衣機）2"
+    },
+    {
+      "name": "公共設施實景（3）",
+      "description": "公共區域設有冰溫熱三用 RO 飲水機、脫水機與投幣式洗衣機。",
+      "image": "/assets/properties/lizhi/common/common-03.jpg",
+      "alt": "立志街22巷8弄1號公共設施（飲水機／脫水機／投幣式洗衣機）3"
+    },
+    {
+      "name": "公共設施實景（4）",
+      "description": "公共區域設有冰溫熱三用 RO 飲水機、脫水機與投幣式洗衣機。",
+      "image": "/assets/properties/lizhi/common/common-04.jpg",
+      "alt": "立志街22巷8弄1號公共設施（飲水機／脫水機／投幣式洗衣機）4"
+    },
+    {
+      "name": "公共設施實景（5）",
+      "description": "公共區域設有冰溫熱三用 RO 飲水機、脫水機與投幣式洗衣機。",
+      "image": "/assets/properties/lizhi/common/common-05.jpg",
+      "alt": "立志街22巷8弄1號公共設施（飲水機／脫水機／投幣式洗衣機）5"
+    }
+  ],
+  "lineUrl": "https://lin.ee/741U2pz",
+  "availability": {
+    "availableRooms": [
+      {
+        "room": "202",
+        "roomId": "202",
+        "floor": "2F",
+        "rent": 5800,
+        "deposit": 11600,
+        "type": "02",
+        "typeName": "2號房型（4.3坪・雙人床）",
+        "badge": "實景可看・立即預約",
+        "coverImage": "/assets/properties/lizhi/types/02/02-09.jpg",
+        "imageDisclaimer": "房型代表照片（302／402房實景），實際現況以現場帶看為準。"
+      }
+    ],
+    "confirmedRentedRooms": [
+      "101",
+      "201",
+      "301",
+      "401",
+      "102",
+      "302",
+      "402",
+      "103",
+      "203",
+      "303",
+      "403"
+    ],
+    "note": "目前對外公開招租為 202 房（月租 5,800 元）；其餘 11 間目前皆在租約中。"
+  },
+  "roomTypes": [
+    {
+      "type": "01",
+      "name": "1號房型（101 / 201 / 301 / 401・4.3坪・單人床）",
+      "representativeRoom": "301",
+      "roomNumbers": [
+        "101",
+        "201",
+        "301",
+        "401"
+      ],
+      "area": "約 4.3 坪",
+      "bedType": "單人床",
+      "rentRange": "4,700～5,500 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "equipment": {
+        "furniture": [
+          "單人床",
+          "書桌椅",
+          "書櫃",
+          "衣櫃"
+        ],
+        "appliances": [
+          "電視",
+          "冷氣",
+          "冰箱",
+          "儲水式電熱水器",
+          "獨立網路"
+        ]
+      },
+      "rooms": [
+        {
+          "roomNumber": "101",
+          "rent": 5500,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "201",
+          "rent": 4700,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "301",
+          "rent": 5500,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "401",
+          "rent": 5500,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/lizhi/types/01/01-01.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）1",
+          "caption": "301房實景｜1號房型格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-02.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）2",
+          "caption": "301房實景｜1號房型格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-03.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）3",
+          "caption": "301房實景｜1號房型格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-04.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）4",
+          "caption": "301房實景｜1號房型格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-05.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）5",
+          "caption": "301房實景｜1號房型格局參考（5）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-06.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）6",
+          "caption": "301房實景｜1號房型格局參考（6）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-07.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）7",
+          "caption": "301房實景｜1號房型格局參考（7）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/01/01-08.jpg",
+          "alt": "立志街 301 房實景（1號房型參考）8",
+          "caption": "301房實景｜1號房型格局參考（8）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 301 房實景拍攝；房型代表照片，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "02",
+      "name": "2號房型（102 / 202 / 302 / 402・4.3坪・雙人床）",
+      "representativeRoom": "302 / 402",
+      "roomNumbers": [
+        "102",
+        "202",
+        "302",
+        "402"
+      ],
+      "area": "約 4.3 坪",
+      "bedType": "雙人床",
+      "rentRange": "5,500～5,800 元／月",
+      "status": "202 空房釋出",
+      "isAvailable": true,
+      "equipment": {
+        "furniture": [
+          "雙人床",
+          "書桌椅",
+          "書櫃",
+          "衣櫃"
+        ],
+        "appliances": [
+          "電視",
+          "冷氣",
+          "冰箱",
+          "儲水式電熱水器",
+          "獨立網路"
+        ]
+      },
+      "rooms": [
+        {
+          "roomNumber": "102",
+          "rent": 5500,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "202",
+          "rent": 5800,
+          "status": "空房可預約",
+          "isAvailable": true
+        },
+        {
+          "roomNumber": "302",
+          "rent": 5800,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "402",
+          "rent": 5800,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/lizhi/types/02/02-09.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）9",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（9）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-01.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）1",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-02.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）2",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-03.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）3",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-04.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）4",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-05.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）5",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（5）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-06.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）6",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（6）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-07.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）7",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（7）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/02/02-08.jpg",
+          "alt": "立志街 302／402 房實景（2號房型雙人床參考）8",
+          "caption": "302／402房實景｜2號房型雙人床格局參考（8）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 114 年 302 與 402 房實景拍攝（雙人床配置）；202 為同格局房間，實際現況以現場帶看為準。"
+    },
+    {
+      "type": "03",
+      "name": "3號房型（103 / 203 / 303 / 403・5坪・雙人床）",
+      "representativeRoom": "303",
+      "roomNumbers": [
+        "103",
+        "203",
+        "303",
+        "403"
+      ],
+      "area": "約 5 坪",
+      "bedType": "雙人床",
+      "rentRange": "5,200～6,000 元／月",
+      "status": "目前無空房",
+      "isAvailable": false,
+      "equipment": {
+        "furniture": [
+          "雙人床",
+          "書桌椅",
+          "書櫃",
+          "衣櫃"
+        ],
+        "appliances": [
+          "電視",
+          "冷氣",
+          "冰箱",
+          "儲水式電熱水器",
+          "獨立網路"
+        ]
+      },
+      "rooms": [
+        {
+          "roomNumber": "103",
+          "rent": 5200,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "203",
+          "rent": 5700,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "303",
+          "rent": 5700,
+          "status": "已出租",
+          "isAvailable": false
+        },
+        {
+          "roomNumber": "403",
+          "rent": 6000,
+          "status": "已出租",
+          "isAvailable": false
+        }
+      ],
+      "photos": [
+        {
+          "src": "/assets/properties/lizhi/types/03/03-07.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）7",
+          "caption": "303房實景｜3號房型格局參考（7）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/03/03-01.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）1",
+          "caption": "303房實景｜3號房型格局參考（1）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/03/03-02.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）2",
+          "caption": "303房實景｜3號房型格局參考（2）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/03/03-03.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）3",
+          "caption": "303房實景｜3號房型格局參考（3）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/03/03-04.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）4",
+          "caption": "303房實景｜3號房型格局參考（4）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/03/03-05.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）5",
+          "caption": "303房實景｜3號房型格局參考（5）"
+        },
+        {
+          "src": "/assets/properties/lizhi/types/03/03-06.jpg",
+          "alt": "立志街 303 房實景（3號房型參考）6",
+          "caption": "303房實景｜3號房型格局參考（6）"
+        }
+      ],
+      "photoDisclaimer": "本房型照片由 303 房實景拍攝；房型代表照片，實際現況以現場帶看為準。"
+    }
+  ]
+}
