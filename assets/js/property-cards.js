@@ -5,7 +5,8 @@
     { slug: "siwei", jsonUrl: "/properties/data/siwei.json", detailUrl: "/properties/siwei/" },
     { slug: "tianshan", jsonUrl: "/properties/data/tianshan.json", detailUrl: "/properties/tianshan/" },
     { slug: "guangdong", jsonUrl: "/properties/data/guangdong.json", detailUrl: "/properties/guangdong/" },
-    { slug: "shandong", jsonUrl: "/properties/data/shandong.json", detailUrl: "/properties/shandong/" }
+    { slug: "shandong", jsonUrl: "/properties/data/shandong.json", detailUrl: "/properties/shandong/" },
+    { slug: "yongkang-abc", jsonUrl: "/properties/data/yongkang-abc.json", detailUrl: "/properties/yongkang-abc/" }
   ];
 
   function text(value) {
@@ -15,7 +16,7 @@
   function getPhoto(property, slug) {
     var types = Array.isArray(property.roomTypes) ? property.roomTypes : [];
 
-    if (slug === "siwei" || slug === "shandong") {
+    if (slug === "siwei" || slug === "shandong" || slug === "yongkang-abc") {
       var availableRooms = property.availability && Array.isArray(property.availability.availableRooms)
         ? property.availability.availableRooms
         : [];
@@ -72,7 +73,7 @@
 
     roomNumbers.forEach(function (roomNumber) {
       var rent;
-      if (slug === "siwei" || slug === "shandong") {
+      if (slug === "siwei" || slug === "shandong" || slug === "yongkang-abc") {
         var availableRooms = property.availability && Array.isArray(property.availability.availableRooms)
           ? property.availability.availableRooms
           : [];
@@ -117,7 +118,7 @@
     var roomNumbers;
     var incompleteRoomData = false;
 
-    if (source.slug === "siwei" || source.slug === "shandong") {
+    if (source.slug === "siwei" || source.slug === "shandong" || source.slug === "yongkang-abc") {
       roomNumbers = availableRooms.map(function (room) {
         if (!room || room.room == null || text(room.room).trim() === "") {
           incompleteRoomData = true;
