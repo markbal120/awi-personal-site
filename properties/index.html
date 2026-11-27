@@ -3,29 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>房源｜房東找阿瑋</title>
-  <meta name="description" content="查看房東找阿瑋的管理物件與房型資訊。">
+  <title>房源搜尋｜喬居房源｜高雄市行政區・捷運・輕軌・台鐵</title>
+  <meta name="description" content="依高雄市行政區、物件類型，或依捷運紅線、橘線、輕軌、台鐵站點距離即時搜尋喬居可租房源。">
   <link rel="stylesheet" href="/assets/css/property-pages.css">
   <link rel="stylesheet" href="/assets/css/property-cards.css">
+  <link rel="stylesheet" href="/assets/css/property-search.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
-  <nav class="p-nav"><div class="p-wrap p-nav-inner">
-    <a class="p-logo" href="/">阿瑋<span>｜</span>陳致瑋</a>
-    <div class="p-links"><a href="/">首頁</a><a href="/properties/" aria-current="page">房源</a><a href="/#cases">案例</a><a href="https://lin.ee/741U2pz" target="_blank" rel="noopener">LINE 聯絡</a></div>
-  </div></nav>
+  <header class="p-nav">
+    <div class="p-wrap p-nav-inner">
+      <a class="p-brand" href="/">房東找阿瑋｜喬居房源</a>
+      <nav class="p-links">
+        <a href="/">回首頁</a>
+        <a href="/properties/">全部房源</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <header class="p-hero"><div class="p-wrap">
-      <div class="p-eyebrow">PROPERTY LISTINGS</div>
-      <h1>房源</h1>
-      <p class="p-lead">目前管理物件的公開資訊與房型介紹。</p>
-    </div></header>
-    <section class="p-section"><div class="p-wrap">
-      <div class="property-listings" data-property-listings data-property-scope="all" aria-live="polite" aria-busy="true">
-        <p class="property-listings__status">房源資料載入中…</p>
+    <section class="p-section">
+      <div class="p-wrap">
+        <h1>房源智慧搜尋</h1>
+        <p class="p-note">支援依高雄市行政區與物件類型篩選，或依捷運／輕軌／台鐵站點距離搜尋周邊可租物件。</p>
+
+        <section class="ps-panel" aria-label="房源搜尋條件">
+          <div class="ps-tabs">
+            <button type="button" class="ps-tab is-active" data-ps-mode="district">依行政區・房型搜尋</button>
+            <button type="button" class="ps-tab" data-ps-mode="transit">依捷運・輕軌・台鐵站點搜尋</button>
+          </div>
+
+          <div id="ps-pane-district">
+            <div class="ps-group">
+              <span class="ps-label">高雄市行政區（可複選）</span>
+              <div id="ps-district-chips" class="ps-chips"></div>
+            </div>
+            <div class="ps-group">
+              <span class="ps-label">物件類型（可複選）</span>
+              <div id="ps-category-chips" class="ps-chips"></div>
+            </div>
+            <div class="ps-controls-row">
+              <div>
+                <label class="ps-label" for="ps-max-rent">月租上限（元）</label>
+                <input id="ps-max-rent" class="ps-input" type="number" min="0" step="500" placeholder="不限預算">
+              </div>
+              <div>
+                <label class="ps-label" for="ps-keyword">關鍵字（路名／案名／房號）</label>
+                <input id="ps-keyword" class="ps-input" type="text" placeholder="例如：三多、立志、606">
+              </div>
+              <div>
+                <label class="ps-label" for="ps-sort">排序方式</label>
+                <select id="ps-sort" class="ps-select">
+                  <option value="available_first">有空房優先</option>
+                  <option value="rent_asc">月租低到高</option>
+                </select>
+              </div>
+              <div>
+                <label class="ps-toggle">
+                  <input id="ps-only-available" type="checkbox" checked>
+                  僅顯示目前有空房物件
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div id="ps-pane-transit" hidden>
+            <div class="ps-controls-row">
+              <div>
+                <label class="ps-label" for="ps-line-select">1. 軌道系統 / 路線</label>
+                <select id="ps-line-select" class="ps-select">
+                  <option value="ALL">全部路線（捷運 + 輕軌 + 台鐵）</option>
+                  <option value="紅線" selected>捷運紅線 (Red Line)</option>
+                  <option value="橘線">捷運橘線 (Orange Line)</option>
+                  <option value="輕軌">高雄輕軌 (C1–C37)</option>
+                  <option value="台鐵">台鐵區間 (岡山 ↔ 鳳山)</option>
+                </select>
+              </div>
+              <div>
+                <label class="ps-label" for="ps-station-search">2. 搜尋站名</label>
+                <input id="ps-station-search" class="ps-input" type="text" placeholder="如：三多、高雄高工、民族">
+              </div>
+              <div>
+                <label class="ps-label" for="ps-station-select">選擇車站</label>
+                <select id="ps-station-select" class="ps-select"></select>
+              </div>
+              <div>
+                <label class="ps-label" for="ps-radius-range">3. 周邊距離：<strong id="ps-radius-label">1.5 公里</strong></label>
+                <input id="ps-radius-range" type="range" min="0.5" max="3.0" step="0.5" value="1.5" style="width:100%;">
+                <div class="ps-chips" style="margin-top:6px;">
+                  <button type="button" class="ps-chip" data-ps-radius="0.5">0.5 km</button>
+                  <button type="button" class="ps-chip" data-ps-radius="1.0">1.0 km</button>
+                  <button type="button" class="ps-chip" data-ps-radius="1.5">1.5 km</button>
+                  <button type="button" class="ps-chip" data-ps-radius="2.0">2.0 km</button>
+                  <button type="button" class="ps-chip" data-ps-radius="3.0">3.0 km</button>
+                </div>
+              </div>
+            </div>
+            <div class="ps-map-wrap">
+              <div id="ps-map"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="ps-summary-bar">
+          <span id="ps-summary">載入房源中…</span>
+        </div>
+
+        <div id="ps-results" class="property-listings"></div>
       </div>
-    </div></section>
+    </section>
   </main>
-  <footer class="p-footer"><div class="p-wrap">© 2026 阿瑋｜陳致瑋 · 高雄房東租賃管理</div></footer>
-  <script defer src="/assets/js/property-cards.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/assets/js/property-search.js"></script>
 </body>
 </html>

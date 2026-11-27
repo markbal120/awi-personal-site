@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-11-27",
+  "properties": [
+    {
+      "slug": "siwei",
+      "name": "四維三路59號分租套房",
+      "category": "分租套房",
+      "district": "苓雅區",
+      "publicLocation": "四維三路59號（近四維行政中心）",
+      "lat": 22.61886324,
+      "lng": 120.31030354,
+      "elevator": false,
+      "availableCount": 1,
+      "availableRooms": [
+        "606"
+      ],
+      "minRent": 6600,
+      "maxRent": 6600,
+      "rentLabel": "月租 6,600 元",
+      "coverImage": "/assets/properties/siwei/rooms/606/IMG_4546.jpg",
+      "photoLabel": "606 房實景",
+      "detailUrl": "/properties/siwei/",
+      "lineUrl": "https://lin.ee/741U2pz",
+      "keywords": [
+        "四維",
+        "四維三路",
+        "四維行政中心",
+        "606"
+      ]
+    },
+    {
+      "slug": "tianshan",
+      "name": "天山路電梯套房",
+      "category": "分租套房",
+      "district": "前鎮區",
+      "publicLocation": "天山路23號附近",
+      "lat": 22.61058708,
+      "lng": 120.3148803,
+      "elevator": true,
+      "availableCount": 5,
+      "availableRooms": [
+        "206",
+        "506",
+        "801",
+        "806",
+        "809"
+      ],
+      "minRent": 6600,
+      "maxRent": 8000,
+      "rentLabel": "月租 6,600～8,000 元",
+      "coverImage": "/assets/properties/tianshan/types/01/01-01.jpg",
+      "photoLabel": "01 房型代表照",
+      "detailUrl": "/properties/tianshan/",
+      "lineUrl": "https://lin.ee/741U2pz",
+      "keywords": [
+        "天山",
+        "天山路",
+        "電梯",
+        "206",
+        "506",
+        "801",
+        "806",
+        "809"
+      ]
+    },
+    {
+      "slug": "guangdong",
+      "name": "廣東二街57號分租套房",
+      "category": "分租套房",
+      "district": "苓雅區",
+      "publicLocation": "廣東二街57號（近光華夜市、三和市場）",
+      "lat": null,
+      "lng": null,
+      "elevator": true,
+      "availableCount": 0,
+      "availableRooms": [],
+      "minRent": 5800,
+      "maxRent": 8610,
+      "rentLabel": "月租 5,800～8,610 元",
+      "coverImage": "/assets/properties/guangdong/types/01/01-02.jpg",
+      "photoLabel": "01 房型代表照",
+      "detailUrl": "/properties/guangdong/",
+      "lineUrl": "https://lin.ee/741U2pz",
+      "keywords": [
+        "廣東",
+        "廣東二街",
+        "光華夜市",
+        "三和市場",
+        "電梯"
+      ]
+    },
+    {
+      "slug": "shandong",
+      "name": "山東街37巷5號5、6樓分租套房",
+      "category": "分租套房",
+      "district": "三民區",
+      "publicLocation": "山東街37巷5號5樓（近高醫商圈、熱河夜市、台鐵民族站）",
+      "lat": 22.64170536,
+      "lng": 120.31097209,
+      "elevator": false,
+      "availableCount": 1,
+      "availableRooms": [
+        "503"
+      ],
+      "minRent": 5500,
+      "maxRent": 5500,
+      "rentLabel": "月租 5,500 元",
+      "coverImage": "/assets/properties/shandong/types/503/503-01.jpg",
+      "photoLabel": "503 房實景",
+      "detailUrl": "/properties/shandong/",
+      "lineUrl": "https://lin.ee/741U2pz",
+      "keywords": [
+        "山東",
+        "山東街",
+        "高醫",
+        "熱河夜市",
+        "民族站",
+        "503"
+      ]
+    },
+    {
+      "slug": "yongkang-abc",
+      "name": "永康ABC分租套房",
+      "category": "分租套房",
+      "district": "苓雅區",
+      "publicLocation": "永康街58號（近捷運三多商圈站、文橫夜市、忠孝夜市、四維行政中心）",
+      "lat": 22.61790703,
+      "lng": 120.30845123,
+      "elevator": false,
+      "availableCount": 4,
+      "availableRooms": [
+        "54-101",
+        "58-101",
+        "54-302",
+        "54-502"
+      ],
+      "minRent": 5800,
+      "maxRent": 7800,
+      "rentLabel": "月租 5,800～7,800 元",
+      "coverImage": "/assets/properties/yongkang-abc/types/01/01-01.jpg",
+      "photoLabel": "54-101 房型參考照",
+      "detailUrl": "/properties/yongkang-abc/",
+      "lineUrl": "https://lin.ee/741U2pz",
+      "keywords": [
+        "永康",
+        "永康街",
+        "三多商圈",
+        "文橫夜市",
+        "忠孝夜市",
+        "54-101",
+        "58-101",
+        "54-302",
+        "54-502"
+      ]
+    },
+    {
+      "slug": "lizhi",
+      "name": "立志街22巷8弄1號分租套房",
+      "category": "分租套房",
+      "district": "三民區",
+      "publicLocation": "立志街22巷8弄1號（近高科大建工校區商圈、輕軌高雄高工站）",
+      "lat": 22.652404279441516,
+      "lng": 120.327380696244,
+      "elevator": false,
+      "availableCount": 1,
+      "availableRooms": [
+        "202"
+      ],
+      "minRent": 5800,
+      "maxRent": 5800,
+      "rentLabel": "月租 5,800 元",
+      "coverImage": "/assets/properties/lizhi/types/02/02-01.jpg",
+      "photoLabel": "202 房型參考照",
+      "detailUrl": "/properties/lizhi/",
+      "lineUrl": "https://lin.ee/741U2pz",
+      "keywords": [
+        "立志",
+        "立志街",
+        "高科大",
+        "建工",
+        "高雄高工",
+        "202"
+      ]
+    }
+  ]
+}
